@@ -1,0 +1,146 @@
+/* @import "reference-image-width-vars.css"; */
+@import "generated-rudy-aspect-ratios.css";
+
+/* Vars */
+:root {
+	--gutter: 16px;
+	--borderWidth: 2px;
+}
+
+
+/* Resets */
+* { box-sizing: border-box; }
+
+body {
+	margin: 0;
+	min-height: 100vw;
+}
+
+/* Typography */
+body {
+	font-family: 'Roboto Mono', sans-serif;
+	color: #333;
+}
+
+/* Everything else */
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 12px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	position:  relative;
+}
+
+header { padding-top: 20px;r }
+h1 { text-align: center;
+}
+
+/* Cards */
+.card {
+	box-sizing: content-box;
+	border: var(--borderWidth) solid #333;
+	background: #333;
+	margin-top: var(--gutter);
+	display: flex;
+	flex-direction: column;
+}
+.card:hover {
+	cursor: pointer;
+}
+.card:focus img { transform: scale(0.95); }
+.card:focus {
+	cursor: pointer;
+}
+.card:hover img { transform: scale(0.95); }
+.card h3 {
+	text-align: center;
+	margin: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1 1 auto;
+	color: #fff;
+}
+.card img {
+	display: block;
+	width: 100%;
+	transition: transform ease-out 0.1s;
+}
+/* One cards per row */
+#card1 { width: 100%; }
+#card2 { width: 100%; }
+#card3 { width: 100%; }
+#card4 { width: 100%; }
+#card5 { width: 100%; }
+#card6 { width: 100%; }
+#card7 { width: 100%; }
+#card8 { width: 100%; }
+#card9 { width: 100%; }
+#card10 { width: 100%; }
+/* Two cards per row */
+@media screen and (min-width: 481px) {
+	#card1 { width: calc( (100% - 1*var(--gutter) - 4*var(--borderWidth) ) * var(--x2PerRow-rudy0) ); }
+	#card2 { width: calc( (100% - 1*var(--gutter) - 4*var(--borderWidth) ) * var(--x2PerRow-rudy1) ); }
+	#card3 { width: calc( (100% - 1*var(--gutter) - 4*var(--borderWidth) ) * var(--x2PerRow-rudy2) ); }
+	#card4 { width: calc( (100% - 1*var(--gutter) - 4*var(--borderWidth) ) * var(--x2PerRow-rudy3) ); }
+	#card5 { width: calc( (100% - 1*var(--gutter) - 4*var(--borderWidth) ) * var(--x2PerRow-rudy4) ); }
+	#card6 { width: calc( (100% - 1*var(--gutter) - 4*var(--borderWidth) ) * var(--x2PerRow-rudy5) ); }
+	#card7 { width: calc( (100% - 1*var(--gutter) - 4*var(--borderWidth) ) * var(--x2PerRow-rudy6) ); }
+	#card8 { width: calc( (100% - 1*var(--gutter) - 4*var(--borderWidth) ) * var(--x2PerRow-rudy7) ); }
+	#card9 { width: calc( (100% - 1*var(--gutter) - 4*var(--borderWidth) ) * var(--x2PerRow-rudy8) ); }
+	#card10 { width: calc( (100% - 1*var(--gutter) - 4*var(--borderWidth) ) * var(--x2PerRow-rudy9) ); }
+}
+/* Three cards per row */
+@media screen and (min-width: 781px) {
+	#card1 { width: calc( (100% - 2*var(--gutter) - 6*var(--borderWidth) ) * var(--x3PerRow-rudy0) ); }
+	#card2 { width: calc( (100% - 2*var(--gutter) - 6*var(--borderWidth) ) * var(--x3PerRow-rudy1) ); }
+	#card3 { width: calc( (100% - 2*var(--gutter) - 6*var(--borderWidth) ) * var(--x3PerRow-rudy2) ); }
+	#card4 { width: calc( (100% - 2*var(--gutter) - 6*var(--borderWidth) ) * var(--x3PerRow-rudy3) ); }
+	#card5 { width: calc( (100% - 2*var(--gutter) - 6*var(--borderWidth) ) * var(--x3PerRow-rudy4) ); }
+	#card6 { width: calc( (100% - 2*var(--gutter) - 6*var(--borderWidth) ) * var(--x3PerRow-rudy5) ); }
+	#card7 { width: calc( (100% - 2*var(--gutter) - 6*var(--borderWidth) ) * var(--x3PerRow-rudy6) ); }
+	#card8 { width: calc( (100% - 2*var(--gutter) - 6*var(--borderWidth) ) * var(--x3PerRow-rudy7) ); }
+	#card9 { width: calc( (100% - 2*var(--gutter) - 6*var(--borderWidth) ) * var(--x3PerRow-rudy8) ); }
+	#card10 { width: calc( (100% - 0*var(--gutter) - 2*var(--borderWidth) ) * var(--x3PerRow-rudy9) ); }
+}
+/* Four cards per row */
+@media screen and (min-width: 981px) {
+	#card1 { width: calc( (100% - 3*var(--gutter) - 8*var(--borderWidth) ) * var(--x4PerRow-rudy0) ); }
+	#card2 { width: calc( (100% - 3*var(--gutter) - 8*var(--borderWidth) ) * var(--x4PerRow-rudy1) ); }
+	#card3 { width: calc( (100% - 3*var(--gutter) - 8*var(--borderWidth) ) * var(--x4PerRow-rudy2) ); }
+	#card4 { width: calc( (100% - 3*var(--gutter) - 8*var(--borderWidth) ) * var(--x4PerRow-rudy3) ); }
+	#card5 { width: calc( (100% - 3*var(--gutter) - 8*var(--borderWidth) ) * var(--x4PerRow-rudy4) ); }
+	#card6 { width: calc( (100% - 3*var(--gutter) - 8*var(--borderWidth) ) * var(--x4PerRow-rudy5) ); }
+	#card7 { width: calc( (100% - 3*var(--gutter) - 8*var(--borderWidth) ) * var(--x4PerRow-rudy6) ); }
+	#card8 { width: calc( (100% - 3*var(--gutter) - 8*var(--borderWidth) ) * var(--x4PerRow-rudy7) ); }
+	#card9 { width: calc( (100% - 1*var(--gutter) - 4*var(--borderWidth) ) * var(--x4PerRow-rudy8) ); }
+	#card10 { width: calc( (100% - 1*var(--gutter) - 4*var(--borderWidth) ) * var(--x4PerRow-rudy9) ); }
+}
+/* Five cards per row */
+/* @media screen and (min-width: 1201px) {
+	#card1 { width: calc( (100% - 4*var(--gutter) - 10*var(--borderWidth) ) * var(--x5PerRow-rudy0) ); }
+	#card2 { width: calc( (100% - 4*var(--gutter) - 10*var(--borderWidth) ) * var(--x5PerRow-rudy1) ); }
+	#card3 { width: calc( (100% - 4*var(--gutter) - 10*var(--borderWidth) ) * var(--x5PerRow-rudy2) ); }
+	#card4 { width: calc( (100% - 4*var(--gutter) - 10*var(--borderWidth) ) * var(--x5PerRow-rudy3) ); }
+	#card5 { width: calc( (100% - 4*var(--gutter) - 10*var(--borderWidth) ) * var(--x5PerRow-rudy4) ); }
+	#card6 { width: calc( (100% - 4*var(--gutter) - 10*var(--borderWidth) ) * var(--x5PerRow-rudy5) ); }
+	#card7 { width: calc( (100% - 4*var(--gutter) - 10*var(--borderWidth) ) * var(--x5PerRow-rudy6) ); }
+	#card8 { width: calc( (100% - 4*var(--gutter) - 10*var(--borderWidth) ) * var(--x5PerRow-rudy7) ); }
+	#card9 { width: calc( (100% - 4*var(--gutter) - 10*var(--borderWidth) ) * var(--x5PerRow-rudy8) ); }
+	#card10 { width: calc( (100% - 4*var(--gutter) - 10*var(--borderWidth) ) * var(--x5PerRow-rudy9) ); }
+} */
+/* Six cards per row */
+/* @media screen and (min-width: 1401px) {
+	#card1 { width: calc( (100% - 5*var(--gutter) - 12*var(--borderWidth) ) * var(--x6PerRow-rudy0) ); }
+	#card2 { width: calc( (100% - 5*var(--gutter) - 12*var(--borderWidth) ) * var(--x6PerRow-rudy1) ); }
+	#card3 { width: calc( (100% - 5*var(--gutter) - 12*var(--borderWidth) ) * var(--x6PerRow-rudy2) ); }
+	#card4 { width: calc( (100% - 5*var(--gutter) - 12*var(--borderWidth) ) * var(--x6PerRow-rudy3) ); }
+	#card5 { width: calc( (100% - 5*var(--gutter) - 12*var(--borderWidth) ) * var(--x6PerRow-rudy4) ); }
+	#card6 { width: calc( (100% - 5*var(--gutter) - 12*var(--borderWidth) ) * var(--x6PerRow-rudy5) ); }
+	#card7 { width: calc( (100% - 3*var(--gutter) - 8*var(--borderWidth) ) * var(--x6PerRow-rudy6) ); }
+	#card8 { width: calc( (100% - 3*var(--gutter) - 8*var(--borderWidth) ) * var(--x6PerRow-rudy7) ); }
+	#card9 { width: calc( (100% - 3*var(--gutter) - 8*var(--borderWidth) ) * var(--x6PerRow-rudy8) ); }
+	#card10 { width: calc( (100% - 3*var(--gutter) - 8*var(--borderWidth) ) * var(--x6PerRow-rudy9) ); }
+} */
