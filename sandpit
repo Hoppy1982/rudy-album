@@ -1,30 +1,170 @@
-'--x2PerRow-rudy0: 0.75/1.5',
-  '--x2PerRow-rudy1: 0.75/1.5',
-  '--x2PerRow-rudy2: 1.3333333333333333/2.6666666666666665',
-  '--x2PerRow-rudy3: 1.3333333333333333/2.6666666666666665',
-  '--x2PerRow-rudy4: 1.3333333333333333/2.083333333333333',
-  '--x2PerRow-rudy5: 0.75/2.083333333333333',
-  '--x3PerRow-rudy0: 0.75/2.833333333333333',
-  '--x3PerRow-rudy1: 0.75/2.833333333333333',
-  '--x3PerRow-rudy2: 1.3333333333333333/2.833333333333333',
-  '--x3PerRow-rudy3: 1.3333333333333333/3.4166666666666665',
-  '--x3PerRow-rudy4: 1.3333333333333333/3.4166666666666665',
-  '--x3PerRow-rudy5: 0.75/3.4166666666666665',
-  '--x4PerRow-rudy0: 0.75/4.166666666666666',
-  '--x4PerRow-rudy1: 0.75/4.166666666666666',
-  '--x4PerRow-rudy2: 1.3333333333333333/4.166666666666666',
-  '--x4PerRow-rudy3: 1.3333333333333333/4.166666666666666',
-  '--x4PerRow-rudy4: 1.3333333333333333/2.083333333333333',
-  '--x4PerRow-rudy5: 0.75/2.083333333333333',
-  '--x5PerRow-rudy0: 0.75/5.499999999999999',
-  '--x5PerRow-rudy1: 0.75/5.499999999999999',
-  '--x5PerRow-rudy2: 1.3333333333333333/5.499999999999999',
-  '--x5PerRow-rudy3: 1.3333333333333333/5.499999999999999',
-  '--x5PerRow-rudy4: 1.3333333333333333/5.499999999999999',
-  '--x5PerRow-rudy5: 0.75/0.75',
-  '--x6PerRow-rudy0: 0.75/6.249999999999999',
-  '--x6PerRow-rudy1: 0.75/6.249999999999999',
-  '--x6PerRow-rudy2: 1.3333333333333333/6.249999999999999',
-  '--x6PerRow-rudy3: 1.3333333333333333/6.249999999999999',
-  '--x6PerRow-rudy4: 1.3333333333333333/6.249999999999999',
-  '--x6PerRow-rudy5: 0.75/6.249999999999999'
+{
+  '481': {
+    index: 0,
+    rowLength: 2,
+    siblingAspectSum: 1.5,
+    widthRatio: '0.75/1.5'
+  },
+  '781': {
+    index: 0,
+    rowLength: 3,
+    siblingAspectSum: 2.833333333333333,
+    widthRatio: '0.75/2.833333333333333'
+  },
+  image: 0,
+  url: './images/rudy-1200/rudy-1.jpg',
+  aspect: 0.75
+}
+{
+  '481': {
+    index: 1,
+    rowLength: 2,
+    siblingAspectSum: 1.5,
+    widthRatio: '0.75/1.5'
+  },
+  '781': {
+    index: 1,
+    rowLength: 3,
+    siblingAspectSum: 2.833333333333333,
+    widthRatio: '0.75/2.833333333333333'
+  },
+  image: 1,
+  url: './images/rudy-1200/rudy-2.jpg',
+  aspect: 0.75
+}
+{
+  '481': {
+    index: 0,
+    rowLength: 1,
+    siblingAspectSum: 1.3333333333333333,
+    widthRatio: '1.3333333333333333/1.3333333333333333'
+  },
+  '781': {
+    index: 2,
+    rowLength: 3,
+    siblingAspectSum: 2.833333333333333,
+    widthRatio: '1.3333333333333333/2.833333333333333'
+  },
+  image: 2,
+  url: './images/rudy-1200/rudy-3.jpg',
+  aspect: 1.3333333333333333
+}
+{
+  '481': {
+    index: 0,
+    rowLength: 2,
+    siblingAspectSum: 2.6666666666666665,
+    widthRatio: '1.3333333333333333/2.6666666666666665'
+  },
+  '781': {
+    index: 0,
+    rowLength: 2,
+    siblingAspectSum: 2.6666666666666665,
+    widthRatio: '1.3333333333333333/2.6666666666666665'
+  },
+  image: 3,
+  url: './images/rudy-1200/rudy-4.jpg',
+  aspect: 1.3333333333333333
+}
+{
+  '481': {
+    index: 1,
+    rowLength: 2,
+    siblingAspectSum: 2.6666666666666665,
+    widthRatio: '1.3333333333333333/2.6666666666666665'
+  },
+  '781': {
+    index: 1,
+    rowLength: 2,
+    siblingAspectSum: 2.6666666666666665,
+    widthRatio: '1.3333333333333333/2.6666666666666665'
+  },
+  image: 4,
+  url: './images/rudy-1200/rudy-5.jpg',
+  aspect: 1.3333333333333333
+}
+{
+  '481': {
+    index: 0,
+    rowLength: 2,
+    siblingAspectSum: 1.3125879043600563,
+    widthRatio: '0.75/1.3125879043600563'
+  },
+  '781': {
+    index: 0,
+    rowLength: 1,
+    siblingAspectSum: 0.75,
+    widthRatio: '0.75/0.75'
+  },
+  image: 5,
+  url: './images/rudy-1200/rudy-6.jpg',
+  aspect: 0.75
+}
+{
+  '481': {
+    index: 1,
+    rowLength: 2,
+    siblingAspectSum: 1.3125879043600563,
+    widthRatio: '0.5625879043600562/1.3125879043600563'
+  },
+  '781': {
+    index: 0,
+    rowLength: 2,
+    siblingAspectSum: 1.3125879043600563,
+    widthRatio: '0.5625879043600562/1.3125879043600563'
+  },
+  image: 6,
+  url: './images/rudy-1200/rudy-7.jpg',
+  aspect: 0.5625879043600562
+}
+{
+  '481': {
+    index: 0,
+    rowLength: 1,
+    siblingAspectSum: 0.75,
+    widthRatio: '0.75/0.75'
+  },
+  '781': {
+    index: 1,
+    rowLength: 2,
+    siblingAspectSum: 1.3125879043600563,
+    widthRatio: '0.75/1.3125879043600563'
+  },
+  image: 7,
+  url: './images/rudy-1200/rudy-8.jpg',
+  aspect: 0.75
+}
+{
+  '481': {
+    index: 0,
+    rowLength: 2,
+    siblingAspectSum: 2.083333333333333,
+    widthRatio: '1.3333333333333333/2.083333333333333'
+  },
+  '781': {
+    index: 0,
+    rowLength: 3,
+    siblingAspectSum: 2.083333333333333,
+    widthRatio: '1.3333333333333333/2.083333333333333'
+  },
+  image: 8,
+  url: './images/rudy-1200/rudy-9.jpg',
+  aspect: 1.3333333333333333
+}
+{
+  '481': {
+    index: 1,
+    rowLength: 2,
+    siblingAspectSum: 2.083333333333333,
+    widthRatio: '0.75/2.083333333333333'
+  },
+  '781': {
+    index: 1,
+    rowLength: 3,
+    siblingAspectSum: 2.083333333333333,
+    widthRatio: '0.75/2.083333333333333'
+  },
+  image: 9,
+  url: './images/rudy-1200/rudy-10.jpg',
+  aspect: 0.75
+}

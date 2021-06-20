@@ -23,13 +23,13 @@ const imageUrls = [
 const itemName = "rudy";
 const maxPerRow = 6;
 const outputPath = path.join(__dirname, "styles/generated-rudy-aspect-ratios.css");
+
+
+/* Vars */
 const imageAspects = imageUrls.map(url => {
 	let dimensions = sizeOf(url);
 	return dimensions.width / dimensions.height;
 });
-
-
-/* Vars */
 let cssStringsToOutput = [];
 
 
