@@ -31,8 +31,8 @@ let breakpointPatterns = [
 		pattern: [3, 2, 1, 2]
 	}
 ]
-const xbreakpoints = [481, 781];
-const xPatterns = [
+const breakpoints = [481, 781];
+const patterns = [
 	[2, 1, 2],
 	[3, 2, 1, 2]
 ];
@@ -43,62 +43,14 @@ const imageAspects = imageUrls.map(url => {
 	const { width, height } = sizeOf(url);
 	return width / height;
 });
-const patternLengths = xPatterns.map( pattern => pattern.reduce((acc, curr) => acc + curr) );
+const patternLengths = patterns.map( pattern => pattern.reduce((acc, curr) => acc + curr) );
 const cssStringsToOutput = [];
 
 
 validateInput();
-
-/* Pre-calc */
-breakpointPatterns = breakpointPatterns.map(bpPattern => {
-	return {
-		bp: bpPattern.bp,
-		pattern: [...bpPattern.pattern],
-		patternSum: bpPattern.pattern.reduce((acc, curr) => acc + curr)
-	}
-})
-
-
-const masonaryItems = imageUrls.map((imageUrl, imageInd) => {
-	let masonaryItem = {
-		image: imageInd,// temp
-		url: imageUrl,// temp
-		aspect: imageAspects[imageInd]// temp
-	};
-
-	breakpointPatterns.forEach((bpPattern, iPattern) => {
-		masonaryItem[bpPattern.bp] = {};
-		let patternPos = imageInd % patternLengths[iPattern];
-
-		let sliceInfo = bpPattern.pattern.map(rowLength => {
-			return [...new Array(rowLength)].map((el, i) => {
-				return {index: i, rowLength: rowLength}
-			});
-		}).flat();
-
-		let sliceLeft = sliceInfo[patternPos].index;
-		let sliceRight = sliceInfo[patternPos].rowLength - sliceLeft;
-		let siblingAspects = imageAspects.slice(imageInd - sliceLeft, imageInd + sliceRight);
-		let siblingAspectSum = siblingAspects.reduce((acc, curr) => acc + curr);
-
-		masonaryItem[bpPattern.bp].index = sliceInfo[patternPos].index;// temp
-		masonaryItem[bpPattern.bp].rowLength = sliceInfo[patternPos].rowLength;// temp
-		masonaryItem[bpPattern.bp].siblingAspectSum = siblingAspectSum;// temp
-		masonaryItem[bpPattern.bp].widthRatio = `${imageAspects[imageInd]}/${siblingAspectSum}`;
-	});
-
-	return masonaryItem;
-});
-
-
-
-
-function validateInput() {
-	// TODO - finish
-	if (xbreakpoints.length !== xPatterns.length)
-		throw `Input Error: Number of patterns (${xPatterns.length}) did not match number of breakpoints (${xbreakpoints.length})`;
-}
-
+const masonaryItems = getMasonaryItemsData();
+//generateCssRules();
+//saveCssFile();
 
 // debug
 masonaryItems.forEach(item => {
@@ -106,10 +58,57 @@ masonaryItems.forEach(item => {
 });
 
 
+/* NEXT: work out how to name all the custom properties, --itemNameX-bpXXX
+generate custom properties and media queries & output to file */
 
 
-//generateCssRules();
-//saveCssFile();
+/*
+ *
+ */
+function validateInput() {
+	// TODO - finish
+	if (breakpoints.length !== patterns.length)
+		throw `Input Error: Number of patterns (${patterns.length}) did not match number of breakpoints (${breakpoints.length})`;
+}
+
+
+/*
+ *
+ */
+function getMasonaryItemsData() {
+	return imageUrls.map((imageUrl, imageInd) => {
+		const masonaryItem = {
+			image: imageInd,// temp
+			url: imageUrl,// temp
+			aspect: imageAspects[imageInd]// temp
+		};
+	
+		patterns.forEach((pattern, iPattern) => {
+			masonaryItem[ breakpoints[iPattern] ] = {};
+			const patternPos = imageInd % patternLengths[iPattern];
+	
+			const sliceInfo = pattern.map(rowLength => {
+				return [...new Array(rowLength)].map((el, i) => {
+					return {index: i, rowLength: rowLength}
+				});
+			}).flat();
+	
+			const sliceLeft = sliceInfo[patternPos].index;
+			const sliceRight = sliceInfo[patternPos].rowLength - sliceLeft;
+			const siblingAspects = imageAspects.slice(imageInd - sliceLeft, imageInd + sliceRight);
+			const siblingAspectSum = siblingAspects.reduce((acc, curr) => acc + curr);
+			// nGutters
+			// nBorders
+	
+			masonaryItem[ breakpoints[iPattern] ].index = sliceInfo[patternPos].index;// temp
+			masonaryItem[ breakpoints[iPattern] ].rowLength = sliceInfo[patternPos].rowLength;// temp
+			masonaryItem[ breakpoints[iPattern] ].siblingAspectSum = siblingAspectSum;// temp
+			masonaryItem[ breakpoints[iPattern] ].widthRatio = `${imageAspects[imageInd]}/${siblingAspectSum}`;
+		});
+	
+		return masonaryItem;
+	});
+}
 
 
 /*
