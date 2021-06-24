@@ -53,12 +53,12 @@ const cssGutterWidthVarName = '--gutter';
 const cssBorderWidthVarName = '--borderWidth';
 const cssPaddingWidthVarName = '--paddingWidth';
 const outputPath = path.join(__dirname, "styles/generated-vars-and-media-queries.css");
-const breakpoints = [600, 900, 1200, 1400];
+const breakpoints = [480, 768, 992, 1200];
 const patterns = [
 	[2, 1],
 	[3, 2],
-	[4, 3, 2],
-	[5, 4, 3]
+	[4, 3, 2, 3],
+	[5, 4, 3, 4]
 ];
 
 
