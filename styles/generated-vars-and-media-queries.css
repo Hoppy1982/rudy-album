@@ -1,315 +1,315 @@
 :root {
-	--rudyCard1-bp481: 1.3333333333333333/2.083333333333333;
-	--rudyCard1-bp781: 1.3333333333333333/3.416666666666666;
-	--rudyCard1-bp981: 1.3333333333333333/4.166666666666666;
-	--rudyCard1-bp1201: 1.3333333333333333/4.916666666666666;
-	--rudyCard2-bp481: 0.75/2.083333333333333;
-	--rudyCard2-bp781: 0.75/3.416666666666666;
-	--rudyCard2-bp981: 0.75/4.166666666666666;
-	--rudyCard2-bp1201: 0.75/4.916666666666666;
-	--rudyCard3-bp481: 1.3333333333333333/1.3333333333333333;
-	--rudyCard3-bp781: 1.3333333333333333/3.416666666666666;
-	--rudyCard3-bp981: 1.3333333333333333/4.166666666666666;
-	--rudyCard3-bp1201: 1.3333333333333333/4.916666666666666;
-	--rudyCard4-bp481: 0.75/1.5;
-	--rudyCard4-bp781: 0.75/1.5;
-	--rudyCard4-bp981: 0.75/4.166666666666666;
-	--rudyCard4-bp1201: 0.75/4.916666666666666;
-	--rudyCard5-bp481: 0.75/1.5;
-	--rudyCard5-bp781: 0.75/1.5;
-	--rudyCard5-bp981: 0.75/2.833333333333333;
-	--rudyCard5-bp1201: 0.75/4.916666666666666;
-	--rudyCard6-bp481: 1.3333333333333333/1.3333333333333333;
-	--rudyCard6-bp781: 1.3333333333333333/3.416666666666666;
-	--rudyCard6-bp981: 1.3333333333333333/2.833333333333333;
-	--rudyCard6-bp1201: 1.3333333333333333/4.166666666666666;
-	--rudyCard7-bp481: 0.75/2.083333333333333;
-	--rudyCard7-bp781: 0.75/3.416666666666666;
-	--rudyCard7-bp981: 0.75/2.833333333333333;
-	--rudyCard7-bp1201: 0.75/4.166666666666666;
-	--rudyCard8-bp481: 1.3333333333333333/2.083333333333333;
-	--rudyCard8-bp781: 1.3333333333333333/3.416666666666666;
-	--rudyCard8-bp981: 1.3333333333333333/2.083333333333333;
-	--rudyCard8-bp1201: 1.3333333333333333/4.166666666666666;
-	--rudyCard9-bp481: 0.75/0.75;
-	--rudyCard9-bp781: 0.75/1.5;
-	--rudyCard9-bp981: 0.75/2.083333333333333;
-	--rudyCard9-bp1201: 0.75/4.166666666666666;
-	--rudyCard10-bp481: 0.75/2.083333333333333;
-	--rudyCard10-bp781: 0.75/1.5;
-	--rudyCard10-bp981: 0.75/3.416666666666666;
-	--rudyCard10-bp1201: 0.75/3.416666666666666;
-	--rudyCard11-bp481: 1.3333333333333333/2.083333333333333;
-	--rudyCard11-bp781: 1.3333333333333333/3.4166666666666665;
-	--rudyCard11-bp981: 1.3333333333333333/3.416666666666666;
-	--rudyCard11-bp1201: 1.3333333333333333/3.416666666666666;
-	--rudyCard12-bp481: 1.3333333333333333/1.3333333333333333;
-	--rudyCard12-bp781: 1.3333333333333333/3.4166666666666665;
-	--rudyCard12-bp981: 1.3333333333333333/3.416666666666666;
-	--rudyCard12-bp1201: 1.3333333333333333/3.416666666666666;
-	--rudyCard13-bp481: 0.75/1.5;
-	--rudyCard13-bp781: 0.75/3.4166666666666665;
-	--rudyCard13-bp981: 0.75/4.166666666666666;
-	--rudyCard13-bp1201: 0.75/5.499999999999999;
-	--rudyCard14-bp481: 0.75/1.5;
-	--rudyCard14-bp781: 0.75/2.083333333333333;
-	--rudyCard14-bp981: 0.75/4.166666666666666;
-	--rudyCard14-bp1201: 0.75/5.499999999999999;
-	--rudyCard15-bp481: 1.3333333333333333/1.3333333333333333;
-	--rudyCard15-bp781: 1.3333333333333333/2.083333333333333;
-	--rudyCard15-bp981: 1.3333333333333333/4.166666666666666;
-	--rudyCard15-bp1201: 1.3333333333333333/5.499999999999999;
-	--rudyCard16-bp481: 1.3333333333333333/2.6666666666666665;
-	--rudyCard16-bp781: 1.3333333333333333/3.4166666666666665;
-	--rudyCard16-bp981: 1.3333333333333333/4.166666666666666;
-	--rudyCard16-bp1201: 1.3333333333333333/5.499999999999999;
-	--rudyCard17-bp481: 1.3333333333333333/2.6666666666666665;
-	--rudyCard17-bp781: 1.3333333333333333/3.4166666666666665;
-	--rudyCard17-bp981: 1.3333333333333333/2.833333333333333;
-	--rudyCard17-bp1201: 1.3333333333333333/5.499999999999999;
-	--rudyCard18-bp481: 0.75/0.75;
-	--rudyCard18-bp781: 0.75/3.4166666666666665;
-	--rudyCard18-bp981: 0.75/2.833333333333333;
-	--rudyCard18-bp1201: 0.75/2.8125;
-	--rudyCard19-bp481: 0.75/1.5;
-	--rudyCard19-bp781: 0.75/1.5;
-	--rudyCard19-bp981: 0.75/2.833333333333333;
-	--rudyCard19-bp1201: 0.75/2.8125;
-	--rudyCard20-bp481: 0.75/1.5;
-	--rudyCard20-bp781: 0.75/1.5;
-	--rudyCard20-bp981: 0.75/1.3125;
-	--rudyCard20-bp1201: 0.75/2.8125;
-	--rudyCard21-bp481: 0.5625/0.5625;
-	--rudyCard21-bp781: 0.5625/1.875;
-	--rudyCard21-bp981: 0.5625/1.3125;
-	--rudyCard21-bp1201: 0.5625/2.8125;
-	--rudyCard22-bp481: 0.5625/1.3125;
-	--rudyCard22-bp781: 0.5625/1.875;
-	--rudyCard22-bp981: 0.5625/2.0625;
-	--rudyCard22-bp1201: 0.5625/2.0625;
-	--rudyCard23-bp481: 0.75/1.3125;
-	--rudyCard23-bp781: 0.75/1.875;
-	--rudyCard23-bp981: 0.75/2.0625;
-	--rudyCard23-bp1201: 0.75/2.0625;
-	--rudyCard24-bp481: 0.75/0.75;
-	--rudyCard24-bp781: 0.75/2.083333333333333;
-	--rudyCard24-bp981: 0.75/2.0625;
-	--rudyCard24-bp1201: 0.75/2.0625;
-	--rudyCard25-bp481: 1.3333333333333333/2.6666666666666665;
-	--rudyCard25-bp781: 1.3333333333333333/2.083333333333333;
-	--rudyCard25-bp981: 1.3333333333333333/4.75;
-	--rudyCard25-bp1201: 1.3333333333333333/5.3125;
-	--rudyCard26-bp481: 1.3333333333333333/2.6666666666666665;
-	--rudyCard26-bp781: 1.3333333333333333/3.4166666666666665;
-	--rudyCard26-bp981: 1.3333333333333333/4.75;
-	--rudyCard26-bp1201: 1.3333333333333333/5.3125;
-	--rudyCard27-bp481: 1.3333333333333333/1.3333333333333333;
-	--rudyCard27-bp781: 1.3333333333333333/3.4166666666666665;
-	--rudyCard27-bp981: 1.3333333333333333/4.75;
-	--rudyCard27-bp1201: 1.3333333333333333/5.3125;
-	--rudyCard28-bp481: 0.75/1.3125;
-	--rudyCard28-bp781: 0.75/3.4166666666666665;
-	--rudyCard28-bp981: 0.75/4.75;
-	--rudyCard28-bp1201: 0.75/5.3125;
-	--rudyCard29-bp481: 0.5625/1.3125;
-	--rudyCard29-bp781: 0.5625/1.3125;
-	--rudyCard29-bp981: 0.5625/2.645833333333333;
-	--rudyCard29-bp1201: 0.5625/5.3125;
-	--rudyCard30-bp481: 0.75/0.75;
-	--rudyCard30-bp781: 0.75/1.3125;
-	--rudyCard30-bp981: 0.75/2.645833333333333;
-	--rudyCard30-bp1201: 0.75/3.583333333333333;
-	--rudyCard31-bp481: 1.3333333333333333/2.083333333333333;
-	--rudyCard31-bp781: 1.3333333333333333/2.833333333333333;
-	--rudyCard31-bp981: 1.3333333333333333/2.645833333333333;
-	--rudyCard31-bp1201: 1.3333333333333333/3.583333333333333;
-	--rudyCard32-bp481: 0.75/2.083333333333333;
-	--rudyCard32-bp781: 0.75/2.833333333333333;
-	--rudyCard32-bp981: 0.75/1.5;
-	--rudyCard32-bp1201: 0.75/3.583333333333333;
-	--rudyCard33-bp481: 0.75/0.75;
-	--rudyCard33-bp781: 0.75/2.833333333333333;
-	--rudyCard33-bp981: 0.75/1.5;
-	--rudyCard33-bp1201: 0.75/3.583333333333333;
-	--rudyCard34-bp481: 1.3688212927756653/3.1465990705534432;
-	--rudyCard34-bp781: 1.3688212927756653/3.1465990705534432;
-	--rudyCard34-bp981: 1.3688212927756653/3.8965990705534432;
-	--rudyCard34-bp1201: 1.3688212927756653/3.8965990705534432;
-	--rudyCard35-bp481: 1.7777777777777777/3.1465990705534432;
-	--rudyCard35-bp781: 1.7777777777777777/3.1465990705534432;
-	--rudyCard35-bp981: 1.7777777777777777/3.8965990705534432;
-	--rudyCard35-bp1201: 1.7777777777777777/3.8965990705534432;
-	--rudyCard36-bp481: 0.75/0.75;
-	--rudyCard36-bp781: 0.75/2.25;
-	--rudyCard36-bp981: 0.75/3.8965990705534432;
-	--rudyCard36-bp1201: 0.75/3.8965990705534432;
-	--rudyCard37-bp481: 0.75/1.5;
-	--rudyCard37-bp781: 0.75/2.25;
-	--rudyCard37-bp981: 0.75/1.5;
-	--rudyCard37-bp1201: 0.75/1.5;
-	--rudyCard38-bp481: 0.75/1.5;
-	--rudyCard38-bp781: 0.75/2.25;
-	--rudyCard38-bp981: 0.75/1.5;
-	--rudyCard38-bp1201: 0.75/1.5;
+	--rudyCard1-bp600: 1.3333333333333333/2.083333333333333;
+	--rudyCard1-bp900: 1.3333333333333333/3.416666666666666;
+	--rudyCard1-bp1200: 1.3333333333333333/4.166666666666666;
+	--rudyCard1-bp1400: 1.3333333333333333/4.916666666666666;
+	--rudyCard2-bp600: 0.75/2.083333333333333;
+	--rudyCard2-bp900: 0.75/3.416666666666666;
+	--rudyCard2-bp1200: 0.75/4.166666666666666;
+	--rudyCard2-bp1400: 0.75/4.916666666666666;
+	--rudyCard3-bp600: 1.3333333333333333/1.3333333333333333;
+	--rudyCard3-bp900: 1.3333333333333333/3.416666666666666;
+	--rudyCard3-bp1200: 1.3333333333333333/4.166666666666666;
+	--rudyCard3-bp1400: 1.3333333333333333/4.916666666666666;
+	--rudyCard4-bp600: 0.75/1.5;
+	--rudyCard4-bp900: 0.75/1.5;
+	--rudyCard4-bp1200: 0.75/4.166666666666666;
+	--rudyCard4-bp1400: 0.75/4.916666666666666;
+	--rudyCard5-bp600: 0.75/1.5;
+	--rudyCard5-bp900: 0.75/1.5;
+	--rudyCard5-bp1200: 0.75/2.833333333333333;
+	--rudyCard5-bp1400: 0.75/4.916666666666666;
+	--rudyCard6-bp600: 1.3333333333333333/1.3333333333333333;
+	--rudyCard6-bp900: 1.3333333333333333/3.416666666666666;
+	--rudyCard6-bp1200: 1.3333333333333333/2.833333333333333;
+	--rudyCard6-bp1400: 1.3333333333333333/4.166666666666666;
+	--rudyCard7-bp600: 0.75/2.083333333333333;
+	--rudyCard7-bp900: 0.75/3.416666666666666;
+	--rudyCard7-bp1200: 0.75/2.833333333333333;
+	--rudyCard7-bp1400: 0.75/4.166666666666666;
+	--rudyCard8-bp600: 1.3333333333333333/2.083333333333333;
+	--rudyCard8-bp900: 1.3333333333333333/3.416666666666666;
+	--rudyCard8-bp1200: 1.3333333333333333/2.083333333333333;
+	--rudyCard8-bp1400: 1.3333333333333333/4.166666666666666;
+	--rudyCard9-bp600: 0.75/0.75;
+	--rudyCard9-bp900: 0.75/1.5;
+	--rudyCard9-bp1200: 0.75/2.083333333333333;
+	--rudyCard9-bp1400: 0.75/4.166666666666666;
+	--rudyCard10-bp600: 0.75/2.083333333333333;
+	--rudyCard10-bp900: 0.75/1.5;
+	--rudyCard10-bp1200: 0.75/3.416666666666666;
+	--rudyCard10-bp1400: 0.75/3.416666666666666;
+	--rudyCard11-bp600: 1.3333333333333333/2.083333333333333;
+	--rudyCard11-bp900: 1.3333333333333333/3.4166666666666665;
+	--rudyCard11-bp1200: 1.3333333333333333/3.416666666666666;
+	--rudyCard11-bp1400: 1.3333333333333333/3.416666666666666;
+	--rudyCard12-bp600: 1.3333333333333333/1.3333333333333333;
+	--rudyCard12-bp900: 1.3333333333333333/3.4166666666666665;
+	--rudyCard12-bp1200: 1.3333333333333333/3.416666666666666;
+	--rudyCard12-bp1400: 1.3333333333333333/3.416666666666666;
+	--rudyCard13-bp600: 0.75/1.5;
+	--rudyCard13-bp900: 0.75/3.4166666666666665;
+	--rudyCard13-bp1200: 0.75/4.166666666666666;
+	--rudyCard13-bp1400: 0.75/5.499999999999999;
+	--rudyCard14-bp600: 0.75/1.5;
+	--rudyCard14-bp900: 0.75/2.083333333333333;
+	--rudyCard14-bp1200: 0.75/4.166666666666666;
+	--rudyCard14-bp1400: 0.75/5.499999999999999;
+	--rudyCard15-bp600: 1.3333333333333333/1.3333333333333333;
+	--rudyCard15-bp900: 1.3333333333333333/2.083333333333333;
+	--rudyCard15-bp1200: 1.3333333333333333/4.166666666666666;
+	--rudyCard15-bp1400: 1.3333333333333333/5.499999999999999;
+	--rudyCard16-bp600: 1.3333333333333333/2.6666666666666665;
+	--rudyCard16-bp900: 1.3333333333333333/3.4166666666666665;
+	--rudyCard16-bp1200: 1.3333333333333333/4.166666666666666;
+	--rudyCard16-bp1400: 1.3333333333333333/5.499999999999999;
+	--rudyCard17-bp600: 1.3333333333333333/2.6666666666666665;
+	--rudyCard17-bp900: 1.3333333333333333/3.4166666666666665;
+	--rudyCard17-bp1200: 1.3333333333333333/2.833333333333333;
+	--rudyCard17-bp1400: 1.3333333333333333/5.499999999999999;
+	--rudyCard18-bp600: 0.75/0.75;
+	--rudyCard18-bp900: 0.75/3.4166666666666665;
+	--rudyCard18-bp1200: 0.75/2.833333333333333;
+	--rudyCard18-bp1400: 0.75/2.8125;
+	--rudyCard19-bp600: 0.75/1.5;
+	--rudyCard19-bp900: 0.75/1.5;
+	--rudyCard19-bp1200: 0.75/2.833333333333333;
+	--rudyCard19-bp1400: 0.75/2.8125;
+	--rudyCard20-bp600: 0.75/1.5;
+	--rudyCard20-bp900: 0.75/1.5;
+	--rudyCard20-bp1200: 0.75/1.3125;
+	--rudyCard20-bp1400: 0.75/2.8125;
+	--rudyCard21-bp600: 0.5625/0.5625;
+	--rudyCard21-bp900: 0.5625/1.875;
+	--rudyCard21-bp1200: 0.5625/1.3125;
+	--rudyCard21-bp1400: 0.5625/2.8125;
+	--rudyCard22-bp600: 0.5625/1.3125;
+	--rudyCard22-bp900: 0.5625/1.875;
+	--rudyCard22-bp1200: 0.5625/2.0625;
+	--rudyCard22-bp1400: 0.5625/2.0625;
+	--rudyCard23-bp600: 0.75/1.3125;
+	--rudyCard23-bp900: 0.75/1.875;
+	--rudyCard23-bp1200: 0.75/2.0625;
+	--rudyCard23-bp1400: 0.75/2.0625;
+	--rudyCard24-bp600: 0.75/0.75;
+	--rudyCard24-bp900: 0.75/2.083333333333333;
+	--rudyCard24-bp1200: 0.75/2.0625;
+	--rudyCard24-bp1400: 0.75/2.0625;
+	--rudyCard25-bp600: 1.3333333333333333/2.6666666666666665;
+	--rudyCard25-bp900: 1.3333333333333333/2.083333333333333;
+	--rudyCard25-bp1200: 1.3333333333333333/4.75;
+	--rudyCard25-bp1400: 1.3333333333333333/5.3125;
+	--rudyCard26-bp600: 1.3333333333333333/2.6666666666666665;
+	--rudyCard26-bp900: 1.3333333333333333/3.4166666666666665;
+	--rudyCard26-bp1200: 1.3333333333333333/4.75;
+	--rudyCard26-bp1400: 1.3333333333333333/5.3125;
+	--rudyCard27-bp600: 1.3333333333333333/1.3333333333333333;
+	--rudyCard27-bp900: 1.3333333333333333/3.4166666666666665;
+	--rudyCard27-bp1200: 1.3333333333333333/4.75;
+	--rudyCard27-bp1400: 1.3333333333333333/5.3125;
+	--rudyCard28-bp600: 0.75/1.3125;
+	--rudyCard28-bp900: 0.75/3.4166666666666665;
+	--rudyCard28-bp1200: 0.75/4.75;
+	--rudyCard28-bp1400: 0.75/5.3125;
+	--rudyCard29-bp600: 0.5625/1.3125;
+	--rudyCard29-bp900: 0.5625/1.3125;
+	--rudyCard29-bp1200: 0.5625/2.645833333333333;
+	--rudyCard29-bp1400: 0.5625/5.3125;
+	--rudyCard30-bp600: 0.75/0.75;
+	--rudyCard30-bp900: 0.75/1.3125;
+	--rudyCard30-bp1200: 0.75/2.645833333333333;
+	--rudyCard30-bp1400: 0.75/3.583333333333333;
+	--rudyCard31-bp600: 1.3333333333333333/2.083333333333333;
+	--rudyCard31-bp900: 1.3333333333333333/2.833333333333333;
+	--rudyCard31-bp1200: 1.3333333333333333/2.645833333333333;
+	--rudyCard31-bp1400: 1.3333333333333333/3.583333333333333;
+	--rudyCard32-bp600: 0.75/2.083333333333333;
+	--rudyCard32-bp900: 0.75/2.833333333333333;
+	--rudyCard32-bp1200: 0.75/1.5;
+	--rudyCard32-bp1400: 0.75/3.583333333333333;
+	--rudyCard33-bp600: 0.75/0.75;
+	--rudyCard33-bp900: 0.75/2.833333333333333;
+	--rudyCard33-bp1200: 0.75/1.5;
+	--rudyCard33-bp1400: 0.75/3.583333333333333;
+	--rudyCard34-bp600: 1.3688212927756653/3.1465990705534432;
+	--rudyCard34-bp900: 1.3688212927756653/3.1465990705534432;
+	--rudyCard34-bp1200: 1.3688212927756653/3.8965990705534432;
+	--rudyCard34-bp1400: 1.3688212927756653/3.8965990705534432;
+	--rudyCard35-bp600: 1.7777777777777777/3.1465990705534432;
+	--rudyCard35-bp900: 1.7777777777777777/3.1465990705534432;
+	--rudyCard35-bp1200: 1.7777777777777777/3.8965990705534432;
+	--rudyCard35-bp1400: 1.7777777777777777/3.8965990705534432;
+	--rudyCard36-bp600: 0.75/0.75;
+	--rudyCard36-bp900: 0.75/2.25;
+	--rudyCard36-bp1200: 0.75/3.8965990705534432;
+	--rudyCard36-bp1400: 0.75/3.8965990705534432;
+	--rudyCard37-bp600: 0.75/1.5;
+	--rudyCard37-bp900: 0.75/2.25;
+	--rudyCard37-bp1200: 0.75/1.5;
+	--rudyCard37-bp1400: 0.75/1.5;
+	--rudyCard38-bp600: 0.75/1.5;
+	--rudyCard38-bp900: 0.75/2.25;
+	--rudyCard38-bp1200: 0.75/1.5;
+	--rudyCard38-bp1400: 0.75/1.5;
 }
 
-@media screen and (min-width: 481px) {
-	.card:nth-of-type(1) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard1-bp481) ); }
-	.card:nth-of-type(2) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard2-bp481) ); }
-	.card:nth-of-type(3) { width: calc( (100% - (0 * var(--gutter)*1px) - (2 * var(--borderWidth)*1px) - (2 * var(--paddingWidth)*1px)) * var(--rudyCard3-bp481) ); }
-	.card:nth-of-type(4) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard4-bp481) ); }
-	.card:nth-of-type(5) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard5-bp481) ); }
-	.card:nth-of-type(6) { width: calc( (100% - (0 * var(--gutter)*1px) - (2 * var(--borderWidth)*1px) - (2 * var(--paddingWidth)*1px)) * var(--rudyCard6-bp481) ); }
-	.card:nth-of-type(7) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard7-bp481) ); }
-	.card:nth-of-type(8) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard8-bp481) ); }
-	.card:nth-of-type(9) { width: calc( (100% - (0 * var(--gutter)*1px) - (2 * var(--borderWidth)*1px) - (2 * var(--paddingWidth)*1px)) * var(--rudyCard9-bp481) ); }
-	.card:nth-of-type(10) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard10-bp481) ); }
-	.card:nth-of-type(11) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard11-bp481) ); }
-	.card:nth-of-type(12) { width: calc( (100% - (0 * var(--gutter)*1px) - (2 * var(--borderWidth)*1px) - (2 * var(--paddingWidth)*1px)) * var(--rudyCard12-bp481) ); }
-	.card:nth-of-type(13) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard13-bp481) ); }
-	.card:nth-of-type(14) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard14-bp481) ); }
-	.card:nth-of-type(15) { width: calc( (100% - (0 * var(--gutter)*1px) - (2 * var(--borderWidth)*1px) - (2 * var(--paddingWidth)*1px)) * var(--rudyCard15-bp481) ); }
-	.card:nth-of-type(16) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard16-bp481) ); }
-	.card:nth-of-type(17) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard17-bp481) ); }
-	.card:nth-of-type(18) { width: calc( (100% - (0 * var(--gutter)*1px) - (2 * var(--borderWidth)*1px) - (2 * var(--paddingWidth)*1px)) * var(--rudyCard18-bp481) ); }
-	.card:nth-of-type(19) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard19-bp481) ); }
-	.card:nth-of-type(20) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard20-bp481) ); }
-	.card:nth-of-type(21) { width: calc( (100% - (0 * var(--gutter)*1px) - (2 * var(--borderWidth)*1px) - (2 * var(--paddingWidth)*1px)) * var(--rudyCard21-bp481) ); }
-	.card:nth-of-type(22) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard22-bp481) ); }
-	.card:nth-of-type(23) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard23-bp481) ); }
-	.card:nth-of-type(24) { width: calc( (100% - (0 * var(--gutter)*1px) - (2 * var(--borderWidth)*1px) - (2 * var(--paddingWidth)*1px)) * var(--rudyCard24-bp481) ); }
-	.card:nth-of-type(25) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard25-bp481) ); }
-	.card:nth-of-type(26) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard26-bp481) ); }
-	.card:nth-of-type(27) { width: calc( (100% - (0 * var(--gutter)*1px) - (2 * var(--borderWidth)*1px) - (2 * var(--paddingWidth)*1px)) * var(--rudyCard27-bp481) ); }
-	.card:nth-of-type(28) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard28-bp481) ); }
-	.card:nth-of-type(29) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard29-bp481) ); }
-	.card:nth-of-type(30) { width: calc( (100% - (0 * var(--gutter)*1px) - (2 * var(--borderWidth)*1px) - (2 * var(--paddingWidth)*1px)) * var(--rudyCard30-bp481) ); }
-	.card:nth-of-type(31) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard31-bp481) ); }
-	.card:nth-of-type(32) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard32-bp481) ); }
-	.card:nth-of-type(33) { width: calc( (100% - (0 * var(--gutter)*1px) - (2 * var(--borderWidth)*1px) - (2 * var(--paddingWidth)*1px)) * var(--rudyCard33-bp481) ); }
-	.card:nth-of-type(34) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard34-bp481) ); }
-	.card:nth-of-type(35) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard35-bp481) ); }
-	.card:nth-of-type(36) { width: calc( (100% - (0 * var(--gutter)*1px) - (2 * var(--borderWidth)*1px) - (2 * var(--paddingWidth)*1px)) * var(--rudyCard36-bp481) ); }
-	.card:nth-of-type(37) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard37-bp481) ); }
-	.card:nth-of-type(38) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard38-bp481) ); }
+@media screen and (min-width: 600px) {
+	.card:nth-of-type(1) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard1-bp600) ); }
+	.card:nth-of-type(2) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard2-bp600) ); }
+	.card:nth-of-type(3) { width: calc( (100% - (0 * var(--gutter)*1px) - (2 * var(--borderWidth)*1px) - (2 * var(--paddingWidth)*1px)) * var(--rudyCard3-bp600) ); }
+	.card:nth-of-type(4) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard4-bp600) ); }
+	.card:nth-of-type(5) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard5-bp600) ); }
+	.card:nth-of-type(6) { width: calc( (100% - (0 * var(--gutter)*1px) - (2 * var(--borderWidth)*1px) - (2 * var(--paddingWidth)*1px)) * var(--rudyCard6-bp600) ); }
+	.card:nth-of-type(7) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard7-bp600) ); }
+	.card:nth-of-type(8) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard8-bp600) ); }
+	.card:nth-of-type(9) { width: calc( (100% - (0 * var(--gutter)*1px) - (2 * var(--borderWidth)*1px) - (2 * var(--paddingWidth)*1px)) * var(--rudyCard9-bp600) ); }
+	.card:nth-of-type(10) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard10-bp600) ); }
+	.card:nth-of-type(11) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard11-bp600) ); }
+	.card:nth-of-type(12) { width: calc( (100% - (0 * var(--gutter)*1px) - (2 * var(--borderWidth)*1px) - (2 * var(--paddingWidth)*1px)) * var(--rudyCard12-bp600) ); }
+	.card:nth-of-type(13) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard13-bp600) ); }
+	.card:nth-of-type(14) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard14-bp600) ); }
+	.card:nth-of-type(15) { width: calc( (100% - (0 * var(--gutter)*1px) - (2 * var(--borderWidth)*1px) - (2 * var(--paddingWidth)*1px)) * var(--rudyCard15-bp600) ); }
+	.card:nth-of-type(16) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard16-bp600) ); }
+	.card:nth-of-type(17) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard17-bp600) ); }
+	.card:nth-of-type(18) { width: calc( (100% - (0 * var(--gutter)*1px) - (2 * var(--borderWidth)*1px) - (2 * var(--paddingWidth)*1px)) * var(--rudyCard18-bp600) ); }
+	.card:nth-of-type(19) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard19-bp600) ); }
+	.card:nth-of-type(20) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard20-bp600) ); }
+	.card:nth-of-type(21) { width: calc( (100% - (0 * var(--gutter)*1px) - (2 * var(--borderWidth)*1px) - (2 * var(--paddingWidth)*1px)) * var(--rudyCard21-bp600) ); }
+	.card:nth-of-type(22) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard22-bp600) ); }
+	.card:nth-of-type(23) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard23-bp600) ); }
+	.card:nth-of-type(24) { width: calc( (100% - (0 * var(--gutter)*1px) - (2 * var(--borderWidth)*1px) - (2 * var(--paddingWidth)*1px)) * var(--rudyCard24-bp600) ); }
+	.card:nth-of-type(25) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard25-bp600) ); }
+	.card:nth-of-type(26) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard26-bp600) ); }
+	.card:nth-of-type(27) { width: calc( (100% - (0 * var(--gutter)*1px) - (2 * var(--borderWidth)*1px) - (2 * var(--paddingWidth)*1px)) * var(--rudyCard27-bp600) ); }
+	.card:nth-of-type(28) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard28-bp600) ); }
+	.card:nth-of-type(29) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard29-bp600) ); }
+	.card:nth-of-type(30) { width: calc( (100% - (0 * var(--gutter)*1px) - (2 * var(--borderWidth)*1px) - (2 * var(--paddingWidth)*1px)) * var(--rudyCard30-bp600) ); }
+	.card:nth-of-type(31) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard31-bp600) ); }
+	.card:nth-of-type(32) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard32-bp600) ); }
+	.card:nth-of-type(33) { width: calc( (100% - (0 * var(--gutter)*1px) - (2 * var(--borderWidth)*1px) - (2 * var(--paddingWidth)*1px)) * var(--rudyCard33-bp600) ); }
+	.card:nth-of-type(34) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard34-bp600) ); }
+	.card:nth-of-type(35) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard35-bp600) ); }
+	.card:nth-of-type(36) { width: calc( (100% - (0 * var(--gutter)*1px) - (2 * var(--borderWidth)*1px) - (2 * var(--paddingWidth)*1px)) * var(--rudyCard36-bp600) ); }
+	.card:nth-of-type(37) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard37-bp600) ); }
+	.card:nth-of-type(38) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard38-bp600) ); }
 }
-@media screen and (min-width: 781px) {
-	.card:nth-of-type(1) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard1-bp781) ); }
-	.card:nth-of-type(2) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard2-bp781) ); }
-	.card:nth-of-type(3) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard3-bp781) ); }
-	.card:nth-of-type(4) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard4-bp781) ); }
-	.card:nth-of-type(5) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard5-bp781) ); }
-	.card:nth-of-type(6) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard6-bp781) ); }
-	.card:nth-of-type(7) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard7-bp781) ); }
-	.card:nth-of-type(8) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard8-bp781) ); }
-	.card:nth-of-type(9) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard9-bp781) ); }
-	.card:nth-of-type(10) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard10-bp781) ); }
-	.card:nth-of-type(11) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard11-bp781) ); }
-	.card:nth-of-type(12) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard12-bp781) ); }
-	.card:nth-of-type(13) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard13-bp781) ); }
-	.card:nth-of-type(14) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard14-bp781) ); }
-	.card:nth-of-type(15) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard15-bp781) ); }
-	.card:nth-of-type(16) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard16-bp781) ); }
-	.card:nth-of-type(17) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard17-bp781) ); }
-	.card:nth-of-type(18) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard18-bp781) ); }
-	.card:nth-of-type(19) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard19-bp781) ); }
-	.card:nth-of-type(20) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard20-bp781) ); }
-	.card:nth-of-type(21) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard21-bp781) ); }
-	.card:nth-of-type(22) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard22-bp781) ); }
-	.card:nth-of-type(23) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard23-bp781) ); }
-	.card:nth-of-type(24) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard24-bp781) ); }
-	.card:nth-of-type(25) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard25-bp781) ); }
-	.card:nth-of-type(26) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard26-bp781) ); }
-	.card:nth-of-type(27) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard27-bp781) ); }
-	.card:nth-of-type(28) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard28-bp781) ); }
-	.card:nth-of-type(29) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard29-bp781) ); }
-	.card:nth-of-type(30) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard30-bp781) ); }
-	.card:nth-of-type(31) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard31-bp781) ); }
-	.card:nth-of-type(32) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard32-bp781) ); }
-	.card:nth-of-type(33) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard33-bp781) ); }
-	.card:nth-of-type(34) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard34-bp781) ); }
-	.card:nth-of-type(35) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard35-bp781) ); }
-	.card:nth-of-type(36) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard36-bp781) ); }
-	.card:nth-of-type(37) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard37-bp781) ); }
-	.card:nth-of-type(38) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard38-bp781) ); }
+@media screen and (min-width: 900px) {
+	.card:nth-of-type(1) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard1-bp900) ); }
+	.card:nth-of-type(2) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard2-bp900) ); }
+	.card:nth-of-type(3) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard3-bp900) ); }
+	.card:nth-of-type(4) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard4-bp900) ); }
+	.card:nth-of-type(5) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard5-bp900) ); }
+	.card:nth-of-type(6) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard6-bp900) ); }
+	.card:nth-of-type(7) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard7-bp900) ); }
+	.card:nth-of-type(8) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard8-bp900) ); }
+	.card:nth-of-type(9) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard9-bp900) ); }
+	.card:nth-of-type(10) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard10-bp900) ); }
+	.card:nth-of-type(11) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard11-bp900) ); }
+	.card:nth-of-type(12) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard12-bp900) ); }
+	.card:nth-of-type(13) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard13-bp900) ); }
+	.card:nth-of-type(14) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard14-bp900) ); }
+	.card:nth-of-type(15) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard15-bp900) ); }
+	.card:nth-of-type(16) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard16-bp900) ); }
+	.card:nth-of-type(17) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard17-bp900) ); }
+	.card:nth-of-type(18) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard18-bp900) ); }
+	.card:nth-of-type(19) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard19-bp900) ); }
+	.card:nth-of-type(20) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard20-bp900) ); }
+	.card:nth-of-type(21) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard21-bp900) ); }
+	.card:nth-of-type(22) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard22-bp900) ); }
+	.card:nth-of-type(23) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard23-bp900) ); }
+	.card:nth-of-type(24) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard24-bp900) ); }
+	.card:nth-of-type(25) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard25-bp900) ); }
+	.card:nth-of-type(26) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard26-bp900) ); }
+	.card:nth-of-type(27) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard27-bp900) ); }
+	.card:nth-of-type(28) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard28-bp900) ); }
+	.card:nth-of-type(29) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard29-bp900) ); }
+	.card:nth-of-type(30) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard30-bp900) ); }
+	.card:nth-of-type(31) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard31-bp900) ); }
+	.card:nth-of-type(32) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard32-bp900) ); }
+	.card:nth-of-type(33) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard33-bp900) ); }
+	.card:nth-of-type(34) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard34-bp900) ); }
+	.card:nth-of-type(35) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard35-bp900) ); }
+	.card:nth-of-type(36) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard36-bp900) ); }
+	.card:nth-of-type(37) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard37-bp900) ); }
+	.card:nth-of-type(38) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard38-bp900) ); }
 }
-@media screen and (min-width: 981px) {
-	.card:nth-of-type(1) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard1-bp981) ); }
-	.card:nth-of-type(2) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard2-bp981) ); }
-	.card:nth-of-type(3) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard3-bp981) ); }
-	.card:nth-of-type(4) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard4-bp981) ); }
-	.card:nth-of-type(5) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard5-bp981) ); }
-	.card:nth-of-type(6) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard6-bp981) ); }
-	.card:nth-of-type(7) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard7-bp981) ); }
-	.card:nth-of-type(8) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard8-bp981) ); }
-	.card:nth-of-type(9) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard9-bp981) ); }
-	.card:nth-of-type(10) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard10-bp981) ); }
-	.card:nth-of-type(11) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard11-bp981) ); }
-	.card:nth-of-type(12) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard12-bp981) ); }
-	.card:nth-of-type(13) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard13-bp981) ); }
-	.card:nth-of-type(14) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard14-bp981) ); }
-	.card:nth-of-type(15) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard15-bp981) ); }
-	.card:nth-of-type(16) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard16-bp981) ); }
-	.card:nth-of-type(17) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard17-bp981) ); }
-	.card:nth-of-type(18) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard18-bp981) ); }
-	.card:nth-of-type(19) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard19-bp981) ); }
-	.card:nth-of-type(20) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard20-bp981) ); }
-	.card:nth-of-type(21) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard21-bp981) ); }
-	.card:nth-of-type(22) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard22-bp981) ); }
-	.card:nth-of-type(23) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard23-bp981) ); }
-	.card:nth-of-type(24) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard24-bp981) ); }
-	.card:nth-of-type(25) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard25-bp981) ); }
-	.card:nth-of-type(26) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard26-bp981) ); }
-	.card:nth-of-type(27) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard27-bp981) ); }
-	.card:nth-of-type(28) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard28-bp981) ); }
-	.card:nth-of-type(29) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard29-bp981) ); }
-	.card:nth-of-type(30) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard30-bp981) ); }
-	.card:nth-of-type(31) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard31-bp981) ); }
-	.card:nth-of-type(32) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard32-bp981) ); }
-	.card:nth-of-type(33) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard33-bp981) ); }
-	.card:nth-of-type(34) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard34-bp981) ); }
-	.card:nth-of-type(35) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard35-bp981) ); }
-	.card:nth-of-type(36) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard36-bp981) ); }
-	.card:nth-of-type(37) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard37-bp981) ); }
-	.card:nth-of-type(38) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard38-bp981) ); }
+@media screen and (min-width: 1200px) {
+	.card:nth-of-type(1) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard1-bp1200) ); }
+	.card:nth-of-type(2) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard2-bp1200) ); }
+	.card:nth-of-type(3) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard3-bp1200) ); }
+	.card:nth-of-type(4) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard4-bp1200) ); }
+	.card:nth-of-type(5) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard5-bp1200) ); }
+	.card:nth-of-type(6) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard6-bp1200) ); }
+	.card:nth-of-type(7) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard7-bp1200) ); }
+	.card:nth-of-type(8) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard8-bp1200) ); }
+	.card:nth-of-type(9) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard9-bp1200) ); }
+	.card:nth-of-type(10) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard10-bp1200) ); }
+	.card:nth-of-type(11) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard11-bp1200) ); }
+	.card:nth-of-type(12) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard12-bp1200) ); }
+	.card:nth-of-type(13) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard13-bp1200) ); }
+	.card:nth-of-type(14) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard14-bp1200) ); }
+	.card:nth-of-type(15) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard15-bp1200) ); }
+	.card:nth-of-type(16) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard16-bp1200) ); }
+	.card:nth-of-type(17) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard17-bp1200) ); }
+	.card:nth-of-type(18) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard18-bp1200) ); }
+	.card:nth-of-type(19) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard19-bp1200) ); }
+	.card:nth-of-type(20) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard20-bp1200) ); }
+	.card:nth-of-type(21) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard21-bp1200) ); }
+	.card:nth-of-type(22) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard22-bp1200) ); }
+	.card:nth-of-type(23) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard23-bp1200) ); }
+	.card:nth-of-type(24) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard24-bp1200) ); }
+	.card:nth-of-type(25) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard25-bp1200) ); }
+	.card:nth-of-type(26) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard26-bp1200) ); }
+	.card:nth-of-type(27) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard27-bp1200) ); }
+	.card:nth-of-type(28) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard28-bp1200) ); }
+	.card:nth-of-type(29) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard29-bp1200) ); }
+	.card:nth-of-type(30) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard30-bp1200) ); }
+	.card:nth-of-type(31) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard31-bp1200) ); }
+	.card:nth-of-type(32) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard32-bp1200) ); }
+	.card:nth-of-type(33) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard33-bp1200) ); }
+	.card:nth-of-type(34) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard34-bp1200) ); }
+	.card:nth-of-type(35) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard35-bp1200) ); }
+	.card:nth-of-type(36) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard36-bp1200) ); }
+	.card:nth-of-type(37) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard37-bp1200) ); }
+	.card:nth-of-type(38) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard38-bp1200) ); }
 }
-@media screen and (min-width: 1201px) {
-	.card:nth-of-type(1) { width: calc( (100% - (4 * var(--gutter)*1px) - (10 * var(--borderWidth)*1px) - (10 * var(--paddingWidth)*1px)) * var(--rudyCard1-bp1201) ); }
-	.card:nth-of-type(2) { width: calc( (100% - (4 * var(--gutter)*1px) - (10 * var(--borderWidth)*1px) - (10 * var(--paddingWidth)*1px)) * var(--rudyCard2-bp1201) ); }
-	.card:nth-of-type(3) { width: calc( (100% - (4 * var(--gutter)*1px) - (10 * var(--borderWidth)*1px) - (10 * var(--paddingWidth)*1px)) * var(--rudyCard3-bp1201) ); }
-	.card:nth-of-type(4) { width: calc( (100% - (4 * var(--gutter)*1px) - (10 * var(--borderWidth)*1px) - (10 * var(--paddingWidth)*1px)) * var(--rudyCard4-bp1201) ); }
-	.card:nth-of-type(5) { width: calc( (100% - (4 * var(--gutter)*1px) - (10 * var(--borderWidth)*1px) - (10 * var(--paddingWidth)*1px)) * var(--rudyCard5-bp1201) ); }
-	.card:nth-of-type(6) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard6-bp1201) ); }
-	.card:nth-of-type(7) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard7-bp1201) ); }
-	.card:nth-of-type(8) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard8-bp1201) ); }
-	.card:nth-of-type(9) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard9-bp1201) ); }
-	.card:nth-of-type(10) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard10-bp1201) ); }
-	.card:nth-of-type(11) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard11-bp1201) ); }
-	.card:nth-of-type(12) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard12-bp1201) ); }
-	.card:nth-of-type(13) { width: calc( (100% - (4 * var(--gutter)*1px) - (10 * var(--borderWidth)*1px) - (10 * var(--paddingWidth)*1px)) * var(--rudyCard13-bp1201) ); }
-	.card:nth-of-type(14) { width: calc( (100% - (4 * var(--gutter)*1px) - (10 * var(--borderWidth)*1px) - (10 * var(--paddingWidth)*1px)) * var(--rudyCard14-bp1201) ); }
-	.card:nth-of-type(15) { width: calc( (100% - (4 * var(--gutter)*1px) - (10 * var(--borderWidth)*1px) - (10 * var(--paddingWidth)*1px)) * var(--rudyCard15-bp1201) ); }
-	.card:nth-of-type(16) { width: calc( (100% - (4 * var(--gutter)*1px) - (10 * var(--borderWidth)*1px) - (10 * var(--paddingWidth)*1px)) * var(--rudyCard16-bp1201) ); }
-	.card:nth-of-type(17) { width: calc( (100% - (4 * var(--gutter)*1px) - (10 * var(--borderWidth)*1px) - (10 * var(--paddingWidth)*1px)) * var(--rudyCard17-bp1201) ); }
-	.card:nth-of-type(18) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard18-bp1201) ); }
-	.card:nth-of-type(19) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard19-bp1201) ); }
-	.card:nth-of-type(20) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard20-bp1201) ); }
-	.card:nth-of-type(21) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard21-bp1201) ); }
-	.card:nth-of-type(22) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard22-bp1201) ); }
-	.card:nth-of-type(23) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard23-bp1201) ); }
-	.card:nth-of-type(24) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard24-bp1201) ); }
-	.card:nth-of-type(25) { width: calc( (100% - (4 * var(--gutter)*1px) - (10 * var(--borderWidth)*1px) - (10 * var(--paddingWidth)*1px)) * var(--rudyCard25-bp1201) ); }
-	.card:nth-of-type(26) { width: calc( (100% - (4 * var(--gutter)*1px) - (10 * var(--borderWidth)*1px) - (10 * var(--paddingWidth)*1px)) * var(--rudyCard26-bp1201) ); }
-	.card:nth-of-type(27) { width: calc( (100% - (4 * var(--gutter)*1px) - (10 * var(--borderWidth)*1px) - (10 * var(--paddingWidth)*1px)) * var(--rudyCard27-bp1201) ); }
-	.card:nth-of-type(28) { width: calc( (100% - (4 * var(--gutter)*1px) - (10 * var(--borderWidth)*1px) - (10 * var(--paddingWidth)*1px)) * var(--rudyCard28-bp1201) ); }
-	.card:nth-of-type(29) { width: calc( (100% - (4 * var(--gutter)*1px) - (10 * var(--borderWidth)*1px) - (10 * var(--paddingWidth)*1px)) * var(--rudyCard29-bp1201) ); }
-	.card:nth-of-type(30) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard30-bp1201) ); }
-	.card:nth-of-type(31) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard31-bp1201) ); }
-	.card:nth-of-type(32) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard32-bp1201) ); }
-	.card:nth-of-type(33) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard33-bp1201) ); }
-	.card:nth-of-type(34) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard34-bp1201) ); }
-	.card:nth-of-type(35) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard35-bp1201) ); }
-	.card:nth-of-type(36) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard36-bp1201) ); }
-	.card:nth-of-type(37) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard37-bp1201) ); }
-	.card:nth-of-type(38) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard38-bp1201) ); }
+@media screen and (min-width: 1400px) {
+	.card:nth-of-type(1) { width: calc( (100% - (4 * var(--gutter)*1px) - (10 * var(--borderWidth)*1px) - (10 * var(--paddingWidth)*1px)) * var(--rudyCard1-bp1400) ); }
+	.card:nth-of-type(2) { width: calc( (100% - (4 * var(--gutter)*1px) - (10 * var(--borderWidth)*1px) - (10 * var(--paddingWidth)*1px)) * var(--rudyCard2-bp1400) ); }
+	.card:nth-of-type(3) { width: calc( (100% - (4 * var(--gutter)*1px) - (10 * var(--borderWidth)*1px) - (10 * var(--paddingWidth)*1px)) * var(--rudyCard3-bp1400) ); }
+	.card:nth-of-type(4) { width: calc( (100% - (4 * var(--gutter)*1px) - (10 * var(--borderWidth)*1px) - (10 * var(--paddingWidth)*1px)) * var(--rudyCard4-bp1400) ); }
+	.card:nth-of-type(5) { width: calc( (100% - (4 * var(--gutter)*1px) - (10 * var(--borderWidth)*1px) - (10 * var(--paddingWidth)*1px)) * var(--rudyCard5-bp1400) ); }
+	.card:nth-of-type(6) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard6-bp1400) ); }
+	.card:nth-of-type(7) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard7-bp1400) ); }
+	.card:nth-of-type(8) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard8-bp1400) ); }
+	.card:nth-of-type(9) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard9-bp1400) ); }
+	.card:nth-of-type(10) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard10-bp1400) ); }
+	.card:nth-of-type(11) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard11-bp1400) ); }
+	.card:nth-of-type(12) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard12-bp1400) ); }
+	.card:nth-of-type(13) { width: calc( (100% - (4 * var(--gutter)*1px) - (10 * var(--borderWidth)*1px) - (10 * var(--paddingWidth)*1px)) * var(--rudyCard13-bp1400) ); }
+	.card:nth-of-type(14) { width: calc( (100% - (4 * var(--gutter)*1px) - (10 * var(--borderWidth)*1px) - (10 * var(--paddingWidth)*1px)) * var(--rudyCard14-bp1400) ); }
+	.card:nth-of-type(15) { width: calc( (100% - (4 * var(--gutter)*1px) - (10 * var(--borderWidth)*1px) - (10 * var(--paddingWidth)*1px)) * var(--rudyCard15-bp1400) ); }
+	.card:nth-of-type(16) { width: calc( (100% - (4 * var(--gutter)*1px) - (10 * var(--borderWidth)*1px) - (10 * var(--paddingWidth)*1px)) * var(--rudyCard16-bp1400) ); }
+	.card:nth-of-type(17) { width: calc( (100% - (4 * var(--gutter)*1px) - (10 * var(--borderWidth)*1px) - (10 * var(--paddingWidth)*1px)) * var(--rudyCard17-bp1400) ); }
+	.card:nth-of-type(18) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard18-bp1400) ); }
+	.card:nth-of-type(19) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard19-bp1400) ); }
+	.card:nth-of-type(20) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard20-bp1400) ); }
+	.card:nth-of-type(21) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard21-bp1400) ); }
+	.card:nth-of-type(22) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard22-bp1400) ); }
+	.card:nth-of-type(23) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard23-bp1400) ); }
+	.card:nth-of-type(24) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard24-bp1400) ); }
+	.card:nth-of-type(25) { width: calc( (100% - (4 * var(--gutter)*1px) - (10 * var(--borderWidth)*1px) - (10 * var(--paddingWidth)*1px)) * var(--rudyCard25-bp1400) ); }
+	.card:nth-of-type(26) { width: calc( (100% - (4 * var(--gutter)*1px) - (10 * var(--borderWidth)*1px) - (10 * var(--paddingWidth)*1px)) * var(--rudyCard26-bp1400) ); }
+	.card:nth-of-type(27) { width: calc( (100% - (4 * var(--gutter)*1px) - (10 * var(--borderWidth)*1px) - (10 * var(--paddingWidth)*1px)) * var(--rudyCard27-bp1400) ); }
+	.card:nth-of-type(28) { width: calc( (100% - (4 * var(--gutter)*1px) - (10 * var(--borderWidth)*1px) - (10 * var(--paddingWidth)*1px)) * var(--rudyCard28-bp1400) ); }
+	.card:nth-of-type(29) { width: calc( (100% - (4 * var(--gutter)*1px) - (10 * var(--borderWidth)*1px) - (10 * var(--paddingWidth)*1px)) * var(--rudyCard29-bp1400) ); }
+	.card:nth-of-type(30) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard30-bp1400) ); }
+	.card:nth-of-type(31) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard31-bp1400) ); }
+	.card:nth-of-type(32) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard32-bp1400) ); }
+	.card:nth-of-type(33) { width: calc( (100% - (3 * var(--gutter)*1px) - (8 * var(--borderWidth)*1px) - (8 * var(--paddingWidth)*1px)) * var(--rudyCard33-bp1400) ); }
+	.card:nth-of-type(34) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard34-bp1400) ); }
+	.card:nth-of-type(35) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard35-bp1400) ); }
+	.card:nth-of-type(36) { width: calc( (100% - (2 * var(--gutter)*1px) - (6 * var(--borderWidth)*1px) - (6 * var(--paddingWidth)*1px)) * var(--rudyCard36-bp1400) ); }
+	.card:nth-of-type(37) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard37-bp1400) ); }
+	.card:nth-of-type(38) { width: calc( (100% - (1 * var(--gutter)*1px) - (4 * var(--borderWidth)*1px) - (4 * var(--paddingWidth)*1px)) * var(--rudyCard38-bp1400) ); }
 }
