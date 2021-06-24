@@ -10,7 +10,7 @@
 
 
 /* Resets */
-* { box-sizing: border-box; }
+* { box-sizing: border-box; border: 2px solid red;}
 
 body {
 	margin: 0;
