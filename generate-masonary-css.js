@@ -8,57 +8,56 @@ const sizeOf = require('image-size');
  */
 /* List image urls below in source order */
 const imageUrls = [
-	"./images/rudy-raw-named/rudy (1).jpg",
-	"./images/rudy-raw-named/rudy (2).jpg",
-	"./images/rudy-raw-named/rudy (3).jpg",
-	"./images/rudy-raw-named/rudy (4).jpg",
-	"./images/rudy-raw-named/rudy (5).jpg",
-	"./images/rudy-raw-named/rudy (6).jpg",
-	"./images/rudy-raw-named/rudy (7).jpg",
-	"./images/rudy-raw-named/rudy (8).jpg",
-	"./images/rudy-raw-named/rudy (9).jpg",
-	"./images/rudy-raw-named/rudy (10).jpg",
-	"./images/rudy-raw-named/rudy (11).jpg",
-	"./images/rudy-raw-named/rudy (12).jpg",
-	"./images/rudy-raw-named/rudy (13).jpg",
-	"./images/rudy-raw-named/rudy (14).jpg",
-	"./images/rudy-raw-named/rudy (15).jpg",
-	"./images/rudy-raw-named/rudy (16).jpg",
-	"./images/rudy-raw-named/rudy (17).jpg",
-	"./images/rudy-raw-named/rudy (18).jpg",
-	"./images/rudy-raw-named/rudy (19).jpg",
-	"./images/rudy-raw-named/rudy (20).jpg",
-	"./images/rudy-raw-named/rudy (21).jpg",
-	"./images/rudy-raw-named/rudy (22).jpg",
-	"./images/rudy-raw-named/rudy (23).jpg",
-	"./images/rudy-raw-named/rudy (24).jpg",
-	"./images/rudy-raw-named/rudy (25).jpg",
-	"./images/rudy-raw-named/rudy (26).jpg",
-	"./images/rudy-raw-named/rudy (27).jpg",
-	"./images/rudy-raw-named/rudy (28).jpg",
-	"./images/rudy-raw-named/rudy (29).jpg",
-	"./images/rudy-raw-named/rudy (30).jpg",
-	"./images/rudy-raw-named/rudy (31).jpg",
-	"./images/rudy-raw-named/rudy (32).jpg",
-	"./images/rudy-raw-named/rudy (33).jpg",
-	"./images/rudy-raw-named/rudy (34).jpg",
-	"./images/rudy-raw-named/rudy (35).jpg",
-	"./images/rudy-raw-named/rudy (36).jpg",
-	"./images/rudy-raw-named/rudy (37).jpg",
-	"./images/rudy-raw-named/rudy (38).jpg",
+	"./images/rudy-full-res/rudy (1).jpg",
+	"./images/rudy-full-res/rudy (2).jpg",
+	"./images/rudy-full-res/rudy (3).jpg",
+	"./images/rudy-full-res/rudy (4).jpg",
+	"./images/rudy-full-res/rudy (5).jpg",
+	"./images/rudy-full-res/rudy (6).jpg",
+	"./images/rudy-full-res/rudy (7).jpg",
+	"./images/rudy-full-res/rudy (8).jpg",
+	"./images/rudy-full-res/rudy (9).jpg",
+	"./images/rudy-full-res/rudy (10).jpg",
+	"./images/rudy-full-res/rudy (11).jpg",
+	"./images/rudy-full-res/rudy (12).jpg",
+	"./images/rudy-full-res/rudy (13).jpg",
+	"./images/rudy-full-res/rudy (14).jpg",
+	"./images/rudy-full-res/rudy (15).jpg",
+	"./images/rudy-full-res/rudy (16).jpg",
+	"./images/rudy-full-res/rudy (17).jpg",
+	"./images/rudy-full-res/rudy (18).jpg",
+	"./images/rudy-full-res/rudy (19).jpg",
+	"./images/rudy-full-res/rudy (20).jpg",
+	"./images/rudy-full-res/rudy (21).jpg",
+	"./images/rudy-full-res/rudy (22).jpg",
+	"./images/rudy-full-res/rudy (23).jpg",
+	"./images/rudy-full-res/rudy (24).jpg",
+	"./images/rudy-full-res/rudy (25).jpg",
+	"./images/rudy-full-res/rudy (26).jpg",
+	"./images/rudy-full-res/rudy (27).jpg",
+	"./images/rudy-full-res/rudy (28).jpg",
+	"./images/rudy-full-res/rudy (29).jpg",
+	"./images/rudy-full-res/rudy (30).jpg",
+	"./images/rudy-full-res/rudy (31).jpg",
+	"./images/rudy-full-res/rudy (32).jpg",
+	"./images/rudy-full-res/rudy (33).jpg",
+	"./images/rudy-full-res/rudy (34).jpg",
+	"./images/rudy-full-res/rudy (35).jpg",
+	"./images/rudy-full-res/rudy (36).jpg",
+	"./images/rudy-full-res/rudy (37).jpg",
+	"./images/rudy-full-res/rudy (38).jpg",
 ]
 const itemCustomPropertyName = "rudyCard";
 const itemCssClass = "card";
 const cssGutterWidthVarName = '--gutter';
 const cssBorderWidthVarName = '--borderWidth';
 const cssPaddingWidthVarName = '--paddingWidth';
-const outputPath = path.join(__dirname, "styles/generated-vars-and-media-queries.css");
-const breakpoints = [340, 768, 992, 1200];
+const outputPath = path.join(__dirname, "styles/generated-masonary.css");
+const breakpoints = [340, 600, 980];
 const patterns = [
 	[2, 1],
 	[3, 2],
-	[4, 3, 2, 3],
-	[5, 4, 3, 4]
+	[4, 3, 2, 3]
 ];
 
 

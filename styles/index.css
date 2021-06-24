@@ -1,9 +1,9 @@
-/* @import "reference-image-width-vars.css"; */
-@import "generated-vars-and-media-queries.css";
+@import "generated-masonary.css";
+
 
 /* Vars */
 :root {
-	--gutter: 8;
+	--gutter: 12;
 	--borderWidth: 2;
 	--paddingWidth: 0;
 }
@@ -12,10 +12,12 @@
 /* Resets */
 * { box-sizing: border-box; }
 
+
 body {
 	margin: 0;
 	min-height: 100vw;
 }
+
 
 /* Typography */
 body {
@@ -23,8 +25,14 @@ body {
 	color: #222;
 }
 
-/* Everything else */
-.container {
+
+/*  */
+header { padding-top: 20px; }
+h1 { text-align: center; }
+
+
+/* Cards */
+.cards {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 12px;
@@ -34,11 +42,6 @@ body {
 	position:  relative;
 }
 
-header { padding-top: 20px;r }
-h1 { text-align: center;
-}
-
-/* Cards */
 .card {
 	box-sizing: content-box;
 	border: calc( var(--borderWidth) * 1px ) solid #222;
