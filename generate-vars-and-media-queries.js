@@ -23,6 +23,7 @@ const itemCustomPropertyName = "rudyCard";
 const itemCssClass = "card";
 const cssGutterWidthVarName = '--gutter';
 const cssBorderWidthVarName = '--borderWidth';
+const cssPaddingWidthVarName = '--paddingWidth';
 const outputPath = path.join(__dirname, "styles/generated-vars-and-media-queries.css");
 const breakpoints = [481, 781];
 const patterns = [
@@ -141,9 +142,11 @@ function writeMediaQueriesToFile() {
 			let cssVar = `${itemCustomPropertyName}${iterator}-bp${width}`;
 			let gutterSpace = `${masonaryItem.breakpoints[bpIndex].nGutters} * var(${cssGutterWidthVarName})`;
 			let borderSpace = `${masonaryItem.breakpoints[bpIndex].nBorders} * var(${cssBorderWidthVarName})`;
+			let paddingSpace = `${masonaryItem.breakpoints[bpIndex].nBorders} * var(${cssPaddingWidthVarName})`;
+
 			fs.appendFileSync(outputPath,
 				`\t.${itemCssClass}:nth-of-type(${iterator}) {` + 
-				` width: calc( (100% - ${gutterSpace} - ${borderSpace}) * var(--${cssVar}) ); ` + 
+				` width: calc( (100% - (${gutterSpace}*1px) - (${borderSpace}*1px) - (${paddingSpace}*1px)) * var(--${cssVar}) ); ` + 
 				`}\n`);
 		});
 
@@ -151,6 +154,7 @@ function writeMediaQueriesToFile() {
 	});
 }
 
+// width: calc( * var(--${cssVar}) );
 
 
 

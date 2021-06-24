@@ -3,8 +3,9 @@
 
 /* Vars */
 :root {
-	--gutter: 16px;
-	--borderWidth: 2px;
+	--gutter: 8;
+	--borderWidth: 2;
+	--paddingWidth: 0;
 }
 
 
@@ -26,7 +27,7 @@ body {
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0 12px;
+	padding: 0 0px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -40,12 +41,13 @@ h1 { text-align: center;
 /* Cards */
 .card {
 	box-sizing: content-box;
-	border: var(--borderWidth) solid #222;
+	border: calc( var(--borderWidth) * 1px ) solid #222;
 	background: #222;
-	margin-top: var(--gutter);
+	margin-top: calc( var(--gutter) * 1px );
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+	padding: calc( var(--paddingWidth) * 1px );
 }
 .card:hover {
 	cursor: pointer;
