@@ -70,7 +70,7 @@ function validateInput() {
 
 
 /*
- *
+ * Calculate data for each masonary item needed to work out it's width
  */
 function getMasonaryItemsData() {
 	return imageUrls.map((imageUrl, imageInd) => {
@@ -90,13 +90,18 @@ function getMasonaryItemsData() {
 					return {index: i, rowLength: rowLength}
 				});
 			}).flat();
-	
-			const sliceLeft = sliceInfo[patternPos].index;
-			const sliceRight = sliceInfo[patternPos].rowLength - sliceLeft;
-			const siblingAspects = imageAspects.slice(imageInd - sliceLeft, imageInd + sliceRight);
+
+			let sliceLeft = sliceInfo[patternPos].index;
+			let sliceRight = sliceInfo[patternPos].rowLength - sliceLeft;
+
+			let deficit = 0;
+			while( imageInd + sliceRight - deficit > imageAspects.length)
+				deficit+=1;
+			
+			const siblingAspects = imageAspects.slice(imageInd - sliceLeft, imageInd + sliceRight - deficit);
 			const siblingAspectSum = siblingAspects.reduce((acc, curr) => acc + curr);
-			const nGutters = sliceInfo[patternPos].rowLength - 1;
-			const nBorders = sliceInfo[patternPos].rowLength * 2;
+			const nGutters = sliceInfo[patternPos].rowLength - deficit - 1;
+			const nBorders = (sliceInfo[patternPos].rowLength - deficit) * 2;
 
 			breakpointData.width = breakpoints[iPattern];
 			breakpointData.index = sliceInfo[patternPos].index;
@@ -104,6 +109,7 @@ function getMasonaryItemsData() {
 			breakpointData.fractionOfRow = `${imageAspects[imageInd]}/${siblingAspectSum}`;
 			breakpointData.nGutters = nGutters;
 			breakpointData.nBorders = nBorders;
+			breakpointData.deficit = deficit;
 			masonaryItem.breakpoints.push(breakpointData);
 		});
 	
@@ -153,8 +159,6 @@ function writeMediaQueriesToFile() {
 		fs.appendFileSync(outputPath, `}\n`);
 	});
 }
-
-// width: calc( * var(--${cssVar}) );
 
 
 
