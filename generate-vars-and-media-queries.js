@@ -8,16 +8,44 @@ const sizeOf = require('image-size');
  */
 /* List image urls below in source order */
 const imageUrls = [
-	"./images/rudy-1200/rudy-1.jpg",
-	"./images/rudy-1200/rudy-2.jpg",
-	"./images/rudy-1200/rudy-3.jpg",
-	"./images/rudy-1200/rudy-4.jpg",
-	"./images/rudy-1200/rudy-5.jpg",
-	"./images/rudy-1200/rudy-6.jpg",
-	"./images/rudy-1200/rudy-7.jpg",
-	"./images/rudy-1200/rudy-8.jpg",
-	"./images/rudy-1200/rudy-9.jpg",
-	"./images/rudy-1200/rudy-10.jpg"
+	"./images/rudy-raw-named/rudy (1).jpg",
+	"./images/rudy-raw-named/rudy (2).jpg",
+	"./images/rudy-raw-named/rudy (3).jpg",
+	"./images/rudy-raw-named/rudy (4).jpg",
+	"./images/rudy-raw-named/rudy (5).jpg",
+	"./images/rudy-raw-named/rudy (6).jpg",
+	"./images/rudy-raw-named/rudy (7).jpg",
+	"./images/rudy-raw-named/rudy (8).jpg",
+	"./images/rudy-raw-named/rudy (9).jpg",
+	"./images/rudy-raw-named/rudy (10).jpg",
+	"./images/rudy-raw-named/rudy (11).jpg",
+	"./images/rudy-raw-named/rudy (12).jpg",
+	"./images/rudy-raw-named/rudy (13).jpg",
+	"./images/rudy-raw-named/rudy (14).jpg",
+	"./images/rudy-raw-named/rudy (15).jpg",
+	"./images/rudy-raw-named/rudy (16).jpg",
+	"./images/rudy-raw-named/rudy (17).jpg",
+	"./images/rudy-raw-named/rudy (18).jpg",
+	"./images/rudy-raw-named/rudy (19).jpg",
+	"./images/rudy-raw-named/rudy (20).jpg",
+	"./images/rudy-raw-named/rudy (21).jpg",
+	"./images/rudy-raw-named/rudy (22).jpg",
+	"./images/rudy-raw-named/rudy (23).jpg",
+	"./images/rudy-raw-named/rudy (24).jpg",
+	"./images/rudy-raw-named/rudy (25).jpg",
+	"./images/rudy-raw-named/rudy (26).jpg",
+	"./images/rudy-raw-named/rudy (27).jpg",
+	"./images/rudy-raw-named/rudy (28).jpg",
+	"./images/rudy-raw-named/rudy (29).jpg",
+	"./images/rudy-raw-named/rudy (30).jpg",
+	"./images/rudy-raw-named/rudy (31).jpg",
+	"./images/rudy-raw-named/rudy (32).jpg",
+	"./images/rudy-raw-named/rudy (33).jpg",
+	"./images/rudy-raw-named/rudy (34).jpg",
+	"./images/rudy-raw-named/rudy (35).jpg",
+	"./images/rudy-raw-named/rudy (36).jpg",
+	"./images/rudy-raw-named/rudy (37).jpg",
+	"./images/rudy-raw-named/rudy (38).jpg",
 ]
 const itemCustomPropertyName = "rudyCard";
 const itemCssClass = "card";
@@ -25,10 +53,12 @@ const cssGutterWidthVarName = '--gutter';
 const cssBorderWidthVarName = '--borderWidth';
 const cssPaddingWidthVarName = '--paddingWidth';
 const outputPath = path.join(__dirname, "styles/generated-vars-and-media-queries.css");
-const breakpoints = [481, 781];
+const breakpoints = [481, 781, 981, 1201];
 const patterns = [
-	[2, 1, 3],
-	[4, 3, 2, 3, 2]
+	[2, 1],
+	[3, 2],
+	[4, 3, 2, 3],
+	[5, 4, 3]
 ];
 
 
