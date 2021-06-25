@@ -22,6 +22,7 @@ function initSelectableCards() {
 		selectedCardContainer.addEventListener('click', function() {
 			selectedCardImg.setAttribute('src', '');
 			selectedCardContainer.classList.remove('selected-of-rudy-cards--active');
+			// TODO - keypress enter or esc closes
 		});
 	}
 
