@@ -1,3 +1,3 @@
 import { initSelectableCards } from "./modules/image-gallery-sizer.js";
 
-initSelectableCards();
+initSelectableCards('rudy-cards', 'rudy-cards__card');

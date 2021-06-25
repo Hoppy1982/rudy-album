@@ -38,27 +38,32 @@ h1 { text-align: center; }
 	align-items: center;
 	background: rgba(0,0,0, 0.95);
 	cursor: pointer;
-	transition: opacity ease-in-out 0.3s;
+	transition: opacity ease-in-out .3s, z-index 0.3s cubic-bezier(0,1,1,0);
 	opacity: 0;
-}
-.selected-of-rudy-cards--active {
+	min-height: 100vh;
+	width: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
-	min-height: 100%;
+	z-index: 0;
+}
+
+.selected-of-rudy-cards--active {
 	z-index: 1;
 	opacity: 1;
 }
+
 .selected-of-rudy-cards img {
+	position: fixed;
 	max-height: 0;
-	border: 4px solid #222;
 	opacity: 0;
 	transition: opacity ease-in-out 0.3s, max-width ease-in-out 0.3s, max-height ease-in-out 0.3s;
 }
 .selected-of-rudy-cards--active img {
+	position: static;
 	max-width: 90vw;
 	max-height: 90vh;
+	border: 4px solid #222;
 	opacity: 1;
 }
 
@@ -86,11 +91,11 @@ h1 { text-align: center; }
 .rudy-cards__card:hover { cursor: pointer; }
 .rudy-cards__card:focus { cursor: pointer; }
 .rudy-cards__card:focus img {
-	transform: scale(0.98);
+	transform: scale(1.1);
 	filter: sepia(100%);
 }
 .rudy-cards__card:hover img {
-	transform: scale(1.05);
+	transform: scale(1.1);
 	filter: sepia(100%);
 }
 .rudy-cards__card h3 {
