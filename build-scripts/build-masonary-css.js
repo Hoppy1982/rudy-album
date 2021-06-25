@@ -52,7 +52,7 @@ const itemCssClass = "card";
 const cssGutterWidthVarName = '--gutter';
 const cssBorderWidthVarName = '--borderWidth';
 const cssPaddingWidthVarName = '--paddingWidth';
-const outputPath = path.join(__dirname, "site/generated/built-masonary.css");
+const outputPath = "./site/generated/built-masonary.css";
 const breakpoints = [340, 600, 980];
 const patterns = [
 	[2, 1],
