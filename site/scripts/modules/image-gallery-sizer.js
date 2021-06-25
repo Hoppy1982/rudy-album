@@ -9,6 +9,7 @@ function initSelectableCards(cardsContainerClass, cardsClass) {
 	const cards = document.querySelectorAll(`.${cardsClass}`);
 	const selectedCardContainer = document.createElement('div');
 	const selectedCardImg = document.createElement('img');
+	let selectedIndex = null;
 
 	initSelectedCard();
 	cardClickHandlers();
@@ -23,10 +24,11 @@ function initSelectableCards(cardsContainerClass, cardsClass) {
 
 	/*  */
 	function cardClickHandlers() {
-		cards.forEach(card => {
+		cards.forEach((card, indCard) => {
 			card.addEventListener('click', function() {
 				let imgUrl = this.querySelector('img').getAttribute('src');
 				selectedCardImg.setAttribute('src', imgUrl);
+				selectedIndex = indCard;
 				selectedCardContainer.classList.add('selected-of-rudy-cards--active');
 				document.addEventListener('keydown', handleKeyDownEsc);
 			}, false);
@@ -36,6 +38,18 @@ function initSelectableCards(cardsContainerClass, cardsClass) {
 	/*  */
 	function handleKeyDownEsc(evt) {
 		if (evt.code === 'Escape') closeSelected();
+		if (evt.code === 'ArrowRight') selectedIndex = indexRoundTheClock(selectedIndex, 1, cards.length-1);
+		if (evt.code === 'ArrowLeft') selectedIndex = indexRoundTheClock(selectedIndex, -1, cards.length-1);
+		let imgUrl = cards[selectedIndex].querySelector('img').getAttribute('src');
+		selectedCardImg.setAttribute('src', imgUrl);
+	}
+
+	/*  */
+	function indexRoundTheClock(current, step, max) {
+		let index = current + step;
+		if (index > max) index = 0;
+		if (index < 0) index = max;
+		return index;
 	}
 
 	/*  */
@@ -45,7 +59,6 @@ function initSelectableCards(cardsContainerClass, cardsClass) {
 		document.removeEventListener('keydown', handleKeyDownEsc);
 	}
 }
-
 
 
 export { initSelectableCards };
