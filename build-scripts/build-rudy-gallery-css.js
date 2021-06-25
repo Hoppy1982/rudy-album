@@ -48,11 +48,11 @@ const imageUrls = [
 	"./site/images/rudy-full-res/rudy (38).jpg",
 ]
 const itemCustomPropertyName = "rudyCard";
-const itemCssClass = "card";
+const itemCssClass = "rudy-cards__card";
 const cssGutterWidthVarName = '--gutter';
 const cssBorderWidthVarName = '--borderWidth';
 const cssPaddingWidthVarName = '--paddingWidth';
-const outputPath = "./site/generated/built-masonary.css";
+const outputPath = "./site/generated/built-rudy-gallery.css";
 const breakpoints = [340, 600, 980];
 const patterns = [
 	[2, 1],

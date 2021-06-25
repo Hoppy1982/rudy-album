@@ -1,4 +1,4 @@
-@import "../generated/built-masonary.css";
+@import "../generated/built-rudy-gallery.css";
 
 
 /* Vars */
@@ -31,8 +31,37 @@ header { padding-top: 20px; }
 h1 { text-align: center; }
 
 
+/* Selected card */
+.selected-of-rudy-cards {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0,0,0, 0.8);
+	cursor: pointer;
+	transition: opacity ease-in-out 0.3s;
+	opacity: 0;
+}
+.selected-of-rudy-cards--active {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100vw;
+	z-index: 1;
+	opacity: 1;
+}
+.selected-of-rudy-cards img {
+	max-height: 0;
+	opacity: 0;
+	transition: opacity ease-in-out 0.3s, max-height ease-in-out 0.3s;
+}
+.selected-of-rudy-cards--active img {
+	max-height: 90vh;
+	opacity: 1;
+}
+
 /* Cards */
-.cards {
+.rudy-cards {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 12px;
@@ -42,7 +71,7 @@ h1 { text-align: center; }
 	position:  relative;
 }
 
-.card {
+.rudy-cards__card {
 	box-sizing: content-box;
 	border: calc( var(--borderWidth) * 1px ) solid #222;
 	background: #222;
@@ -52,17 +81,17 @@ h1 { text-align: center; }
 	width: 100%;
 	padding: calc( var(--paddingWidth) * 1px );
 }
-.card:hover { cursor: pointer; }
-.card:focus { cursor: pointer; }
-.card:focus img {
+.rudy-cards__card:hover { cursor: pointer; }
+.rudy-cards__card:focus { cursor: pointer; }
+.rudy-cards__card:focus img {
 	transform: scale(0.98);
 	filter: sepia(100%);
 }
-.card:hover img {
+.rudy-cards__card:hover img {
 	transform: scale(1.05);
 	filter: sepia(100%);
 }
-.card h3 {
+.rudy-cards__card h3 {
 	text-align: center;
 	margin: 8px;
 	display: flex;
@@ -71,8 +100,8 @@ h1 { text-align: center; }
 	flex: 1 1 auto;
 	color: #fff;
 }
-.card .img-wrapper { overflow: hidden; }
-.card img {
+.rudy-cards__card .img-wrapper { overflow: hidden; }
+.rudy-cards__card img {
 	display: block;
 	width: 100%;
 	transition: transform ease-out 0.2s, filter ease-out 0.2s;

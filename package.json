@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node ./build-scripts/build-masonary-css.js && node ./build-scripts/node-test.js"
+    "build": "node ./build-scripts/build-rudy-gallery-css.js && node ./build-scripts/node-test.js"
   },
   "keywords": [],
   "author": "Mark Hopcraft",
