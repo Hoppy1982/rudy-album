@@ -98,6 +98,7 @@ function validateInput() {
 /*
  * Calculate data for each masonary item needed to work out it's width
  */
+// TODO - make this function exportable so can reuse in front end
 function getMasonaryItemsData() {
 	return imageUrls.map((imageUrl, imageInd) => {
 		const masonaryItem = {
