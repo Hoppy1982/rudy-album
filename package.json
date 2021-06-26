@@ -2,7 +2,8 @@
   "name": "rudy-album",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./site/index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node ./build-scripts/build-rudy-gallery-css.js && node ./build-scripts/node-test.js"

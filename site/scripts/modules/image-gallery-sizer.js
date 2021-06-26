@@ -37,7 +37,7 @@ function initSelectableCards(cardsContainerClass, cardsClass) {
 
 	/*  */
 	function handleKeyDownEsc(evt) {
-		if (evt.code === 'Escape') closeSelected();
+		if (evt.code === 'Escape' || evt.code === 'Tab') closeSelected();
 		if (evt.code === 'ArrowRight') selectedIndex = indexRoundTheClock(selectedIndex, 1, cards.length-1);
 		if (evt.code === 'ArrowLeft') selectedIndex = indexRoundTheClock(selectedIndex, -1, cards.length-1);
 		let imgUrl = cards[selectedIndex].querySelector('img').getAttribute('src');

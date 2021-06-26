@@ -1,12 +1,13 @@
-const path = require('path');
-const fs = require('fs');
-const sizeOf = require('image-size');
+import fs from 'fs';
+import sizeOf from 'image-size';
 
 
 /* 
  * Config 
+ *
+ * List image urls below in source order .
+ * Tempting to read from dir but that would mean fixed order.
  */
-/* List image urls below in source order */
 const imageUrls = [
 	"./site/images/rudy-full-res/rudy (1).jpg",
 	"./site/images/rudy-full-res/rudy (2).jpg",
@@ -69,30 +70,26 @@ const imageAspects = imageUrls.map(url => {
 const patternLengths = patterns.map( pattern => pattern.reduce((acc, curr) => acc + curr) );
 
 
-/*  */
+/* Run everything */
 validateInput();
 const masonaryItems = getMasonaryItemsData();
 if ( fs.existsSync(outputPath) )
 	fs.unlinkSync(outputPath);
 writeCssCustomPropertiesToFile();
-writeMediaQueriesToFile()
+writeMediaQueriesToFile();
 
 
-/* Debug */
+// debug
 masonaryItems.forEach(item => {
 	console.log(item);
 });
-
-
-/* NEXT: work out how to name all the custom properties, --itemCustomPropertyNameX-bpXXX
-generate custom properties and media queries & output to file */
 
 
 /*
  *
  */
 function validateInput() {
-	// TODO - finish
+	// TODO - add more validation
 	if (breakpoints.length !== patterns.length)
 		throw `Input Error: Number of patterns (${patterns.length}) did not match number of breakpoints (${breakpoints.length})`;
 }
@@ -151,16 +148,26 @@ function getMasonaryItemsData() {
  * Generates and writes css custom properties to file for each masonary item at each breakpoint
  */
 function writeCssCustomPropertiesToFile() {
-	fs.appendFileSync(outputPath, ':root {\n');
+	fs.appendFileSync(outputPath, `:root {\n`);
 
-	masonaryItems.forEach(masonaryItem => {
-		masonaryItem.breakpoints.forEach(breakpoint => {
-			fs.appendFileSync(outputPath, `\t--${itemCustomPropertyName}${masonaryItem.index+1}-bp${breakpoint.width}: ${breakpoint.fractionOfRow};\n`);
+	breakpoints.forEach((breakpoint, i) => {
+		masonaryItems.forEach((masonaryItem, ii)  => {
+			let fractionOfRow = `${masonaryItem.breakpoints[i].fractionOfRow}`;
+			let gutterSpace = `${masonaryItem.breakpoints[i].nGutters} * var(${cssGutterWidthVarName})`;
+			let borderSpace = `${masonaryItem.breakpoints[i].nBorders} * var(${cssBorderWidthVarName})`;
+			let paddingSpace = `${masonaryItem.breakpoints[i].nBorders} * var(${cssPaddingWidthVarName})`;
+			let totalSpace = `( (${gutterSpace}) + (${borderSpace}) + (${paddingSpace}) )`;
+			let customPropWidthName = `${itemCustomPropertyName}${ii+1}-bp${breakpoint}-width`;
+			let customPropWidthVal = `calc( (100% - ${totalSpace}*1px) * ${fractionOfRow} )`;
+
+			masonaryItem.breakpoints[i].customPropWidthName = customPropWidthName;
+			fs.appendFileSync(outputPath, `\t--${customPropWidthName}: ${customPropWidthVal};\n`);
 		});
+		fs.appendFileSync(outputPath, `\n`);
 	});
 
-	fs.appendFileSync(outputPath, '}');
-	fs.appendFileSync(outputPath, '\n\n');
+	fs.appendFileSync(outputPath, `}`);
+	fs.appendFileSync(outputPath, `\n\n`);
 }
 
 
@@ -168,26 +175,18 @@ function writeCssCustomPropertiesToFile() {
  * Generates media queries and writes to file.
  */
 function writeMediaQueriesToFile() {
-	breakpoints.forEach((breakpoint, bpIndex) => {
+	breakpoints.forEach((breakpoint, i) => {
 		fs.appendFileSync(outputPath, `@media screen and (min-width: ${breakpoint}px) {\n`);
 
-		masonaryItems.forEach(masonaryItem => {
-			let iterator = masonaryItem.index+1;
-			let width = masonaryItem.breakpoints[bpIndex].width;
-			let cssVar = `${itemCustomPropertyName}${iterator}-bp${width}`;
-			let gutterSpace = `${masonaryItem.breakpoints[bpIndex].nGutters} * var(${cssGutterWidthVarName})`;
-			let borderSpace = `${masonaryItem.breakpoints[bpIndex].nBorders} * var(${cssBorderWidthVarName})`;
-			let paddingSpace = `${masonaryItem.breakpoints[bpIndex].nBorders} * var(${cssPaddingWidthVarName})`;
-
+		masonaryItems.forEach((masonaryItem, ii) => {
 			fs.appendFileSync(outputPath,
-				`\t.${itemCssClass}:nth-of-type(${iterator}) {` + 
-				` width: calc( (100% - (${gutterSpace}*1px) - (${borderSpace}*1px) - (${paddingSpace}*1px)) * var(--${cssVar}) ); ` + 
-				`}\n`);
+				`\t.${itemCssClass}:nth-of-type(${ii+1}) {` + 
+				` width: var(--${masonaryItem.breakpoints[i].customPropWidthName}); ` +
+				`}\n`
+			);
 		});
 
 		fs.appendFileSync(outputPath, `}\n`);
 	});
 }
-
-
 
