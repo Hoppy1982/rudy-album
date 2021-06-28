@@ -6,13 +6,17 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node ./build-scripts/build-rudy-gallery-css.js && node ./build-scripts/copy-dirs.js"
+    "build-gallery-css": "node ./build-scripts/build-rudy-gallery-css.js",
+    "build-html": "node ./build-scripts/build-html.cjs",
+    "copy-dirs": "node ./build-scripts/copy-dirs.js",
+    "build": "npm run build-gallery-css && npm run build-html && npm run copy-dirs"
   },
   "keywords": [],
   "author": "Mark Hopcraft",
   "license": "MIT",
   "dependencies": {
     "image-size": "^1.0.0",
-    "nunjucks": "^3.2.3"
+    "nunjucks": "^3.2.3",
+    "sharp": "^0.28.3"
   }
 }

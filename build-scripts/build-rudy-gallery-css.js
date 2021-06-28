@@ -5,55 +5,14 @@ import sizeOf from 'image-size';
 /* 
  * Config 
  *
- * List image urls below in source order .
- * Tempting to read from dir but that would mean fixed order.
  */
-const imageUrls = [
-	"./site/images/rudy-full-res/rudy (1).jpg",
-	"./site/images/rudy-full-res/rudy (2).jpg",
-	"./site/images/rudy-full-res/rudy (3).jpg",
-	"./site/images/rudy-full-res/rudy (4).jpg",
-	"./site/images/rudy-full-res/rudy (5).jpg",
-	"./site/images/rudy-full-res/rudy (6).jpg",
-	"./site/images/rudy-full-res/rudy (7).jpg",
-	"./site/images/rudy-full-res/rudy (8).jpg",
-	"./site/images/rudy-full-res/rudy (9).jpg",
-	"./site/images/rudy-full-res/rudy (10).jpg",
-	"./site/images/rudy-full-res/rudy (11).jpg",
-	"./site/images/rudy-full-res/rudy (12).jpg",
-	"./site/images/rudy-full-res/rudy (13).jpg",
-	"./site/images/rudy-full-res/rudy (14).jpg",
-	"./site/images/rudy-full-res/rudy (15).jpg",
-	"./site/images/rudy-full-res/rudy (16).jpg",
-	"./site/images/rudy-full-res/rudy (17).jpg",
-	"./site/images/rudy-full-res/rudy (18).jpg",
-	"./site/images/rudy-full-res/rudy (19).jpg",
-	"./site/images/rudy-full-res/rudy (20).jpg",
-	"./site/images/rudy-full-res/rudy (21).jpg",
-	"./site/images/rudy-full-res/rudy (22).jpg",
-	"./site/images/rudy-full-res/rudy (23).jpg",
-	"./site/images/rudy-full-res/rudy (24).jpg",
-	"./site/images/rudy-full-res/rudy (25).jpg",
-	"./site/images/rudy-full-res/rudy (26).jpg",
-	"./site/images/rudy-full-res/rudy (27).jpg",
-	"./site/images/rudy-full-res/rudy (28).jpg",
-	"./site/images/rudy-full-res/rudy (29).jpg",
-	"./site/images/rudy-full-res/rudy (30).jpg",
-	"./site/images/rudy-full-res/rudy (31).jpg",
-	"./site/images/rudy-full-res/rudy (32).jpg",
-	"./site/images/rudy-full-res/rudy (33).jpg",
-	"./site/images/rudy-full-res/rudy (34).jpg",
-	"./site/images/rudy-full-res/rudy (35).jpg",
-	"./site/images/rudy-full-res/rudy (36).jpg",
-	"./site/images/rudy-full-res/rudy (37).jpg",
-	"./site/images/rudy-full-res/rudy (38).jpg",
-]
+const baseImagesJSONPath = './src/data/gallery-images.json';
 const itemCustomPropertyName = "rudyCard";
 const itemCssClass = "rudy-cards__card";
 const cssGutterWidthVarName = '--gutter';
 const cssBorderWidthVarName = '--borderWidth';
 const cssPaddingWidthVarName = '--paddingWidth';
-const outputPath = "./site/generated/built-rudy-gallery.css";
+const outputPath = "./dist/styles/built-rudy-gallery.css";
 const breakpoints = [340, 600, 980];
 const patterns = [
 	[2, 1],
@@ -63,6 +22,8 @@ const patterns = [
 
 
 /* Vars */
+const baseImagesJSON = fs.readFileSync(baseImagesJSONPath);
+const imageUrls = JSON.parse(baseImagesJSON).images.map(image => image.url);
 const imageAspects = imageUrls.map(url => {
 	const { width, height } = sizeOf(url);
 	return width / height;
@@ -77,6 +38,7 @@ if ( fs.existsSync(outputPath) )
 	fs.unlinkSync(outputPath);
 writeCssCustomPropertiesToFile();
 writeMediaQueriesToFile();
+
 
 
 // debug
