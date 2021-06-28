@@ -80,7 +80,7 @@ function createImages(baseImages, cfgs) {
 						imageData[`w${cfg.width}`] = {
 							width: info.width,
 							height: info.height,
-							url: `.${outputPath}`
+							url: outputPath.replace('./dist', '.')
 						};
 						resolve();
 					})
