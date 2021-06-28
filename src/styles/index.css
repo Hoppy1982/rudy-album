@@ -100,6 +100,10 @@ h1 { text-align: center; }
 	transform: scale(1.1);
 	filter: sepia(0%);
 }
+/* Special hover for first image */
+.rudy-cards__card:first-of-type:hover img {
+	transform: scale(2.4) translateY(28%);
+}
 .rudy-cards__card h3 {
 	text-align: center;
 	margin: 8px;
