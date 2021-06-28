@@ -43,7 +43,7 @@ writeMediaQueriesToFile();
 
 // debug
 masonaryItems.forEach(item => {
-	console.log(item);
+	//console.log(item);
 });
 
 

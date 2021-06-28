@@ -94,11 +94,11 @@ h1 { text-align: center; }
 .rudy-cards__card:focus { cursor: pointer; }
 .rudy-cards__card:focus img {
 	transform: scale(1.1);
-	filter: sepia(100%);
+	filter: sepia(0%);
 }
 .rudy-cards__card:hover img {
 	transform: scale(1.1);
-	filter: sepia(100%);
+	filter: sepia(0%);
 }
 .rudy-cards__card h3 {
 	text-align: center;
@@ -113,6 +113,7 @@ h1 { text-align: center; }
 .rudy-cards__card img {
 	display: block;
 	width: 100%;
+	filter: sepia(100%);
 	transition: transform ease-out 0.2s, filter ease-out 0.2s;
 }
 

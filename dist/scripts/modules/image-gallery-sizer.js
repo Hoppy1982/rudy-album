@@ -26,7 +26,8 @@ function initSelectableCards(cardsContainerClass, cardsClass) {
 	function cardClickHandlers() {
 		cards.forEach((card, indCard) => {
 			card.addEventListener('click', function() {
-				let imgUrl = this.querySelector('img').getAttribute('src');
+				//let imgUrl = this.querySelector('img').getAttribute('src');
+				let imgUrl = this.querySelector('img').dataset.highResImg;
 				selectedCardImg.setAttribute('src', imgUrl);
 				selectedIndex = indCard;
 				selectedCardContainer.classList.add('selected-of-rudy-cards--active');

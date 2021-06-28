@@ -7,8 +7,9 @@ const sharp = require('sharp');
 const baseImagesJSONPath = './src/data/gallery-images.json';
 const imageOutputConfigs = [
 	{ width: 300, quality:  80, destPath: './dist/assets/images/rudy-300' },
-	{ width: 600, quality:  80, destPath: './dist/assets/images/rudy-600' },
-	{ width: 1000, quality:  80, destPath: './dist/assets/images/rudy-1000' }
+	{ width: 480, quality:  80, destPath: './dist/assets/images/rudy-480' },
+	{ width: 800, quality:  80, destPath: './dist/assets/images/rudy-800' },
+	{ width: 1200, quality:  80, destPath: './dist/assets/images/rudy-1200' }
 ];
 const imagesMetaDestPath = './dist/data/imagesMeta.json';
 
@@ -23,9 +24,8 @@ const baseImages = JSON.parse(baseImagesJSON).images;
 	const imagesMetaJSON = JSON.stringify(imagesMeta, null, 2);
 
 	try {
-		console.log(imagesMetaDestPath)
 		if ( !fs.existsSync( path.dirname(imagesMetaDestPath)) )
-			fs.mkdirSync( path.dirname(imagesMetaDestPath) )
+			fs.mkdirSync( path.dirname(imagesMetaDestPath) );
 
 		fs.writeFileSync(imagesMetaDestPath, imagesMetaJSON);
 	}
@@ -62,7 +62,7 @@ function createImages(baseImages, cfgs) {
 		for (const cfg of cfgs) {
 			promises.push(new Promise((resolve, reject) => {
 				const ext = path.extname(baseImage.url);
-				const fName = path.basename(baseImage.url, ext);
+				const fName = path.basename(baseImage.url, ext).split(" ").join("");
 				const newFileName = `${fName}-${cfg.width}${ext}`;
 				const outputPath = `${cfg.destPath}/${newFileName}`;
 
@@ -82,14 +82,12 @@ function createImages(baseImages, cfgs) {
 							height: info.height,
 							url: `.${outputPath}`
 						};
-						imageDatas.push(imageData);
 						resolve();
 					})
 					.catch(err => { reject(err); });
-				
-					
 			}));
 		}
+		imageDatas.push(imageData);
 	}
 
 	return Promise.all(promises)
