@@ -109,7 +109,10 @@ h1 { text-align: center; }
 	flex: 1 1 auto;
 	color: #fff;
 }
-.rudy-cards__card .img-wrapper { overflow: hidden; }
+.rudy-cards__card .img-wrapper {
+	overflow: hidden;
+	width: 100%;
+}
 .rudy-cards__card img {
 	display: block;
 	width: 100%;
