@@ -25,4 +25,3 @@ async function copyDir(src, dest) {
 
 copyDir('./src/styles', './dist/styles');
 copyDir('./src/scripts', './dist/scripts');
-copyDir('./src/assets', './dist/assets');

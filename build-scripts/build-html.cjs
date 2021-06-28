@@ -2,10 +2,14 @@ const fs = require('fs');
 const nunjucks = require('nunjucks');
 
 
+const imagesMetaPath = './dist/data/imagesMeta.json';
+const imagesMetaJSON = fs.readFileSync(imagesMetaPath);
+const imagesMeta = JSON.parse(imagesMetaJSON);
+
 const indexContext = {
-  ctx1: 'hello',
-  ctx2: 'world'
-}
+  imagesMeta: imagesMeta
+};
+
 nunjucks.configure('src/templates/views', {});
 
 

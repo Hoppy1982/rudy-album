@@ -2,110 +2,98 @@ const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp');
 
-/* cfg */
+
+/* Cfg */
 const baseImagesJSONPath = './src/data/gallery-images.json';
 const imageOutputConfigs = [
-	{ width: 300, quality:  80, destPath: './dist/assets/images/rudy300' },
-	{ width: 600, quality:  80, destPath: './dist/assets/images/rudy600' },
-	{ width: 1000, quality:  80, destPath: './dist/assets/images/rudy1000' }
+	{ width: 300, quality:  80, destPath: './dist/assets/images/rudy-300' },
+	{ width: 600, quality:  80, destPath: './dist/assets/images/rudy-600' },
+	{ width: 1000, quality:  80, destPath: './dist/assets/images/rudy-1000' }
 ];
+const imagesMetaDestPath = './dist/data/imagesMeta.json';
 
-/* */
+/* Vars */
 const baseImagesJSON = fs.readFileSync(baseImagesJSONPath);
-const baseImageDatas = JSON.parse(baseImagesJSON);
+const baseImages = JSON.parse(baseImagesJSON).images;
 
 
-const imagesData = createImages(baseImageDatas, imageOutputConfigs)
-console.log(imagesData);
+/* Run */
+(async () => {
+	const imagesMeta = await createImages(baseImages, imageOutputConfigs);
+	const imagesMetaJSON = JSON.stringify(imagesMeta, null, 2);
+
+	try {
+		console.log(imagesMetaDestPath)
+		if ( !fs.existsSync( path.dirname(imagesMetaDestPath)) )
+			fs.mkdirSync( path.dirname(imagesMetaDestPath) )
+
+		fs.writeFileSync(imagesMetaDestPath, imagesMetaJSON);
+	}
+	catch(err) { console.log(err); }
+})()
+
 
 
 
 /*
  *
  */
-function createImages(baseImageDatas, cfgs) {
-	const imagesData = [];
+function createImages(baseImages, cfgs) {
 	const promises = [];
+	const imageDatas = [];
 
-	//for (const imageData of )
-
-	baseImageDatas.images.forEach(baseImageData => {
-
+	for (const baseImage of baseImages) {
 		const imageData = {
-			alt: baseImageData.alt,
+			alt: baseImage.alt,
+			aspect: null,
 			base: {
-				url: baseImageData.url,
-				width: null
+				url: baseImage.url
 			}
 		}
 
-		cfgs.forEach(cfg => {
-			const ext = path.extname(baseImageData.url);
-			const fName = path.basename(baseImageData.url, ext);
-			const newFileName = `${fName}-${cfg.width}${ext}`;
-			const outputPath = `${cfg.destPath}/${newFileName}`;
+		sharp(baseImage.url)
+			.metadata()
+			.then(metadata => {
+				imageData.aspect = metadata.width / metadata.height;
+				imageData.base.width = metadata.width;
+				imageData.base.height = metadata.height;
+			});
 
-			if (!fs.existsSync(cfg.destPath))
-				fs.mkdirSync(cfg.destPath);
+		for (const cfg of cfgs) {
+			promises.push(new Promise((resolve, reject) => {
+				const ext = path.extname(baseImage.url);
+				const fName = path.basename(baseImage.url, ext);
+				const newFileName = `${fName}-${cfg.width}${ext}`;
+				const outputPath = `${cfg.destPath}/${newFileName}`;
 
-			sharp(baseImageData.url)
-				.resize(cfg.width)
-				.jpeg({
-					mozjpeg: true,
-					quality: cfg.quality
-				})
-				.toFile(outputPath)
-				.then(info => { sharpImageData = info; })
-				.catch(err => { console.log(err); });
-		});
+				if (!fs.existsSync(cfg.destPath))
+					fs.mkdirSync(cfg.destPath);
 
-		imagesData.push(imageData);
-	});
+				sharp(baseImage.url)
+					.resize(cfg.width)
+					.jpeg({
+						mozjpeg: true,
+						quality: cfg.quality
+					})
+					.toFile(outputPath)
+					.then(info => {
+						imageData[`w${cfg.width}`] = {
+							width: info.width,
+							height: info.height,
+							url: `.${outputPath}`
+						};
+						imageDatas.push(imageData);
+						resolve();
+					})
+					.catch(err => { reject(err); });
+				
+					
+			}));
+		}
+	}
 
-	return imagesData;
+	return Promise.all(promises)
+		.then(() => {
+			return imageDatas;
+		})
 }
-
-
-
-// function createImages(baseImageDatas, cfgs) {
-// 	const imagesData = [];
-
-// 	baseImageDatas.images.forEach(baseImageData => {
-
-// 		const imageData = {
-// 			alt: baseImageData.alt,
-// 			base: {
-// 				url: baseImageData.url,
-// 				width: null
-// 			}
-// 		}
-
-// 		cfgs.forEach(cfg => {
-// 			const ext = path.extname(baseImageData.url);
-// 			const fName = path.basename(baseImageData.url, ext);
-// 			const newFileName = `${fName}-${cfg.width}${ext}`;
-// 			const outputPath = `${cfg.destPath}/${newFileName}`;
-
-// 			if (!fs.existsSync(cfg.destPath))
-// 				fs.mkdirSync(cfg.destPath);
-
-// 			sharp(baseImageData.url)
-// 				.resize(cfg.width)
-// 				.jpeg({
-// 					mozjpeg: true,
-// 					quality: cfg.quality
-// 				})
-// 				.toFile(outputPath)
-// 				.then(info => { sharpImageData = info; })
-// 				.catch(err => { console.log(err); });
-// 		});
-
-// 		imagesData.push(imageData);
-// 	});
-
-// 	return imagesData;
-// }
-
-/*
- * Generate a context file with image paths, widths, heights, alt text and aspect ratio
- */

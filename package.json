@@ -6,10 +6,11 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build-images": "node ./build-scripts/build-images.cjs",
     "build-gallery-css": "node ./build-scripts/build-rudy-gallery-css.js",
     "build-html": "node ./build-scripts/build-html.cjs",
     "copy-dirs": "node ./build-scripts/copy-dirs.js",
-    "build": "npm run build-gallery-css && npm run build-html && npm run copy-dirs"
+    "build": "npm run build-images  && npm run copy-dirs && npm run build-gallery-css && npm run build-html"
   },
   "keywords": [],
   "author": "Mark Hopcraft",
