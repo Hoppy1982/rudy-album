@@ -15,9 +15,9 @@ const cssPaddingWidthVarName = '--paddingWidth';
 const outputPath = "./dist/styles/built-rudy-gallery.css";
 const breakpoints = [340, 600, 980];
 const patterns = [
-	[2, 1],
-	[3, 2],
-	[4, 3, 2, 3]
+	[1, 2],
+	[2, 3],
+	[3, 4, 5]
 ];
 
 

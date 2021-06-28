@@ -1,5 +1,63 @@
 [
   {
+    "alt": "That's right",
+    "aspect": 0.75,
+    "base": {
+      "url": "./src/assets/images/rudy-full-res/rudy (36).jpg",
+      "width": 540,
+      "height": 720
+    },
+    "w300": {
+      "width": 300,
+      "height": 400,
+      "url": "./assets/images/rudy-300/rudy(36)-300.jpg"
+    },
+    "w480": {
+      "width": 480,
+      "height": 640,
+      "url": "./assets/images/rudy-480/rudy(36)-480.jpg"
+    },
+    "w800": {
+      "width": 800,
+      "height": 1067,
+      "url": "./assets/images/rudy-800/rudy(36)-800.jpg"
+    },
+    "w1200": {
+      "width": 1200,
+      "height": 1600,
+      "url": "./assets/images/rudy-1200/rudy(36)-1200.jpg"
+    }
+  },
+  {
+    "alt": "And what?",
+    "aspect": 1.3688212927756653,
+    "base": {
+      "url": "./src/assets/images/rudy-full-res/rudy (34).jpg",
+      "width": 720,
+      "height": 526
+    },
+    "w300": {
+      "width": 300,
+      "height": 219,
+      "url": "./assets/images/rudy-300/rudy(34)-300.jpg"
+    },
+    "w480": {
+      "width": 480,
+      "height": 351,
+      "url": "./assets/images/rudy-480/rudy(34)-480.jpg"
+    },
+    "w800": {
+      "width": 800,
+      "height": 584,
+      "url": "./assets/images/rudy-800/rudy(34)-800.jpg"
+    },
+    "w1200": {
+      "width": 1200,
+      "height": 877,
+      "url": "./assets/images/rudy-1200/rudy(34)-1200.jpg"
+    }
+  },
+  {
     "alt": "Asleep on a bed",
     "aspect": 1.3333333333333333,
     "base": {
@@ -7,15 +65,15 @@
       "width": 720,
       "height": 540
     },
-    "w480": {
-      "width": 480,
-      "height": 360,
-      "url": "./assets/images/rudy-480/rudy(1)-480.jpg"
-    },
     "w300": {
       "width": 300,
       "height": 225,
       "url": "./assets/images/rudy-300/rudy(1)-300.jpg"
+    },
+    "w480": {
+      "width": 480,
+      "height": 360,
+      "url": "./assets/images/rudy-480/rudy(1)-480.jpg"
     },
     "w800": {
       "width": 800,
@@ -696,7 +754,7 @@
     }
   },
   {
-    "alt": ".",
+    "alt": "Caption",
     "aspect": 1.3333333333333333,
     "base": {
       "url": "./src/assets/images/rudy-full-res/rudy (25).jpg",
@@ -725,7 +783,7 @@
     }
   },
   {
-    "alt": ".",
+    "alt": "Caption",
     "aspect": 1.3333333333333333,
     "base": {
       "url": "./src/assets/images/rudy-full-res/rudy (26).jpg",
@@ -754,7 +812,7 @@
     }
   },
   {
-    "alt": ".",
+    "alt": "Caption",
     "aspect": 1.3333333333333333,
     "base": {
       "url": "./src/assets/images/rudy-full-res/rudy (27).jpg",
@@ -783,7 +841,7 @@
     }
   },
   {
-    "alt": ".",
+    "alt": "Caption",
     "aspect": 0.75,
     "base": {
       "url": "./src/assets/images/rudy-full-res/rudy (28).jpg",
@@ -812,7 +870,7 @@
     }
   },
   {
-    "alt": ".",
+    "alt": "Caption",
     "aspect": 0.5625,
     "base": {
       "url": "./src/assets/images/rudy-full-res/rudy (29).jpg",
@@ -841,7 +899,7 @@
     }
   },
   {
-    "alt": ".",
+    "alt": "Caption",
     "aspect": 0.75,
     "base": {
       "url": "./src/assets/images/rudy-full-res/rudy (30).jpg",
@@ -870,7 +928,7 @@
     }
   },
   {
-    "alt": ".",
+    "alt": "Caption",
     "aspect": 1.3333333333333333,
     "base": {
       "url": "./src/assets/images/rudy-full-res/rudy (31).jpg",
@@ -899,7 +957,7 @@
     }
   },
   {
-    "alt": ".",
+    "alt": "Caption",
     "aspect": 0.75,
     "base": {
       "url": "./src/assets/images/rudy-full-res/rudy (32).jpg",
@@ -928,7 +986,7 @@
     }
   },
   {
-    "alt": ".",
+    "alt": "Caption",
     "aspect": 0.75,
     "base": {
       "url": "./src/assets/images/rudy-full-res/rudy (33).jpg",
@@ -957,36 +1015,7 @@
     }
   },
   {
-    "alt": ".",
-    "aspect": 1.3688212927756653,
-    "base": {
-      "url": "./src/assets/images/rudy-full-res/rudy (34).jpg",
-      "width": 720,
-      "height": 526
-    },
-    "w300": {
-      "width": 300,
-      "height": 219,
-      "url": "./assets/images/rudy-300/rudy(34)-300.jpg"
-    },
-    "w480": {
-      "width": 480,
-      "height": 351,
-      "url": "./assets/images/rudy-480/rudy(34)-480.jpg"
-    },
-    "w800": {
-      "width": 800,
-      "height": 584,
-      "url": "./assets/images/rudy-800/rudy(34)-800.jpg"
-    },
-    "w1200": {
-      "width": 1200,
-      "height": 877,
-      "url": "./assets/images/rudy-1200/rudy(34)-1200.jpg"
-    }
-  },
-  {
-    "alt": ".",
+    "alt": "Caption",
     "aspect": 1.7777777777777777,
     "base": {
       "url": "./src/assets/images/rudy-full-res/rudy (35).jpg",
@@ -1015,36 +1044,7 @@
     }
   },
   {
-    "alt": ".",
-    "aspect": 0.75,
-    "base": {
-      "url": "./src/assets/images/rudy-full-res/rudy (36).jpg",
-      "width": 540,
-      "height": 720
-    },
-    "w300": {
-      "width": 300,
-      "height": 400,
-      "url": "./assets/images/rudy-300/rudy(36)-300.jpg"
-    },
-    "w480": {
-      "width": 480,
-      "height": 640,
-      "url": "./assets/images/rudy-480/rudy(36)-480.jpg"
-    },
-    "w800": {
-      "width": 800,
-      "height": 1067,
-      "url": "./assets/images/rudy-800/rudy(36)-800.jpg"
-    },
-    "w1200": {
-      "width": 1200,
-      "height": 1600,
-      "url": "./assets/images/rudy-1200/rudy(36)-1200.jpg"
-    }
-  },
-  {
-    "alt": ".",
+    "alt": "Caption",
     "aspect": 0.75,
     "base": {
       "url": "./src/assets/images/rudy-full-res/rudy (37).jpg",
@@ -1073,7 +1073,7 @@
     }
   },
   {
-    "alt": ".",
+    "alt": "Caption",
     "aspect": 0.75,
     "base": {
       "url": "./src/assets/images/rudy-full-res/rudy (38).jpg",
