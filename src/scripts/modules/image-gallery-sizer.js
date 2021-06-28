@@ -41,7 +41,7 @@ function initSelectableCards(cardsContainerClass, cardsClass) {
 		if (evt.code === 'Escape' || evt.code === 'Tab') closeSelected();
 		if (evt.code === 'ArrowRight') selectedIndex = indexRoundTheClock(selectedIndex, 1, cards.length-1);
 		if (evt.code === 'ArrowLeft') selectedIndex = indexRoundTheClock(selectedIndex, -1, cards.length-1);
-		let imgUrl = cards[selectedIndex].querySelector('img').getAttribute('src');
+		let imgUrl = cards[selectedIndex].querySelector('img').dataset.highResImg;
 		selectedCardImg.setAttribute('src', imgUrl);
 	}
 
