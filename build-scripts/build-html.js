@@ -1,6 +1,5 @@
-const fs = require('fs');
-const nunjucks = require('nunjucks');
-
+import fs from 'fs';
+import nunjucks from 'nunjucks';
 
 const imagesMetaPath = './dist/data/imagesMeta.json';
 const imagesMetaJSON = fs.readFileSync(imagesMetaPath);

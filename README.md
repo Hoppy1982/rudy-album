@@ -3,6 +3,7 @@
 
 # TODO
 - mangle build scripts into one module
+- replace sizeOf with sharp
 - cfg all in one place
 - maybe refactor as class
 - selected image, remove and insert into dom or display none for better a11y
