@@ -1,156 +1,194 @@
 {
-  "images": [
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (36).jpg",
-      "alt": "That's right"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (34).jpg",
-      "alt": "And what?"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (1).jpg",
-      "alt": "Asleep on a bed"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (2).jpg",
-      "alt": "Asleep on a chair"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (3).jpg",
-      "alt": "Just woken up"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (4).jpg",
-      "alt": "Post sleep stretch"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (5).jpg",
-      "alt": "Ready to plant"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (6).jpg",
-      "alt": "Surveying his kingdom"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (7).jpg",
-      "alt": "Sleeping prawn"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (8).jpg",
-      "alt": "In the way"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (9).jpg",
-      "alt": "Out of the way"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (10).jpg",
-      "alt": "Upside down"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (11).jpg",
-      "alt": "Pursuing hobby"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (12).jpg",
-      "alt": "Pursuing hobby"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (13).jpg",
-      "alt": "In the way"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (14).jpg",
-      "alt": "Pursuing hobby"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (15).jpg",
-      "alt": "Upside down"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (16).jpg",
-      "alt": "Sleeping on a bag"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (17).jpg",
-      "alt": "Prawn sleeping on a chair"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (18).jpg",
-      "alt": "Sleeping on a chair"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (19).jpg",
-      "alt": "Hiding"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (20).jpg",
-      "alt": "Found"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (21).jpg",
-      "alt": "Not in the way"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (22).jpg",
-      "alt": "Staking his territory"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (23).jpg",
-      "alt": "Sort of up a tree"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (24).jpg",
-      "alt": "A coiled spring"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (25).jpg",
-      "alt": "Caption"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (26).jpg",
-      "alt": "Caption"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (27).jpg",
-      "alt": "Caption"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (28).jpg",
-      "alt": "Caption"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (29).jpg",
-      "alt": "Caption"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (30).jpg",
-      "alt": "Caption"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (31).jpg",
-      "alt": "Caption"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (32).jpg",
-      "alt": "Caption"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (33).jpg",
-      "alt": "Caption"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (35).jpg",
-      "alt": "Caption"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (37).jpg",
-      "alt": "Caption"
-    },
-    {
-      "url": "./src/assets/images/rudy-full-res/rudy (38).jpg",
-      "alt": "Caption"
-    }
-  ]
+	"images": [
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (36).jpg",
+			"caption": "That's right",
+			"alt": "That's right"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (34).jpg",
+			"caption": "And what?",
+			"alt": "And what?"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (1).jpg",
+			"caption": "Asleep on a bed",
+			"alt": "Asleep on a bed"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (2).jpg",
+			"caption": "Asleep on a chair",
+			"alt": "Asleep on a chair"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (3).jpg",
+			"caption": "Just woken up",
+			"alt": "Just woken up"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (4).jpg",
+			"caption": "Post sleep stretch",
+			"alt": "Post sleep stretch"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (5).jpg",
+			"caption": "Ready to plant",
+			"alt": "Ready to plant"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (6).jpg",
+			"caption": "Surveying his kingdom",
+			"alt": "Surveying his kingdom"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (7).jpg",
+			"caption": "Sleeping prawn",
+			"alt": "Sleeping prawn"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (8).jpg",
+			"caption": "In the way",
+			"alt": "In the way"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (9).jpg",
+			"caption": "Out of the way",
+			"alt": "Out of the way"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (10).jpg",
+			"caption": "Upside down",
+			"alt": "Upside down"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (11).jpg",
+			"caption": "Pursuing hobby",
+			"alt": "Pursuing hobby"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (12).jpg",
+			"caption": "Pursuing hobby",
+			"alt": "Pursuing hobby"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (13).jpg",
+			"caption": "In the way",
+			"alt": "In the way"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (14).jpg",
+			"caption": "Pursuing hobby",
+			"alt": "Pursuing hobby"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (15).jpg",
+			"caption": "Upside down",
+			"alt": "Upside down"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (16).jpg",
+			"caption": "Sleeping on a bag",
+			"alt": "Sleeping on a bag"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (17).jpg",
+			"caption": "Prawn sleeping on a chair",
+			"alt": "Prawn sleeping on a chair"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (18).jpg",
+			"caption": "Sleeping on a chair",
+			"alt": "Sleeping on a chair"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (19).jpg",
+			"caption": "Hiding",
+			"alt": "Hiding"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (20).jpg",
+			"caption": "Found",
+			"alt": "Found"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (21).jpg",
+			"caption": "Not in the way",
+			"alt": "Not in the way"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (22).jpg",
+			"caption": "Staking his territory",
+			"alt": "Staking his territory"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (23).jpg",
+			"caption": "Sort of up a tree",
+			"alt": "Sort of up a tree"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (24).jpg",
+			"caption": "A coiled spring",
+			"alt": "A coiled spring"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (25).jpg",
+			"caption": "Caption",
+			"alt": "Caption"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (26).jpg",
+			"caption": "Caption",
+			"alt": "Caption"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (27).jpg",
+			"caption": "Caption",
+			"alt": "Caption"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (28).jpg",
+			"caption": "Caption",
+			"alt": "Caption"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (29).jpg",
+			"caption": "Caption",
+			"alt": "Caption"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (30).jpg",
+			"caption": "Caption",
+			"alt": "Caption"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (31).jpg",
+			"caption": "Caption",
+			"alt": "Caption"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (32).jpg",
+			"caption": "Caption",
+			"alt": "Caption"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (33).jpg",
+			"caption": "Caption",
+			"alt": "Caption"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (35).jpg",
+			"caption": "Caption",
+			"alt": "Caption"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (37).jpg",
+			"caption": "Caption",
+			"alt": "Caption"
+		},
+		{
+			"url": "./src/assets/images/rudy-full-res/rudy (38).jpg",
+			"caption": "Caption",
+			"alt": "Caption"
+		}
+	]
 }
