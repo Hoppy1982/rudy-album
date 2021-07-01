@@ -120,7 +120,7 @@ h1 { text-align: center; }
 .rudy-cards__card img {
 	display: block;
 	width: 100%;
-	filter: sepia(100%);
+	filter: sepia(70%);
 	transition: transform ease-out 0.2s, filter ease-out 0.2s;
 }
 
