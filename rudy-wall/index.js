@@ -5,27 +5,17 @@ import sharp from 'sharp';
 export default class RudyWall {
 	constructor({
 		baseImagePaths,
-		imageOutputConfigs,
-		breakpoints,
-		patterns,
-		imageFilesInfo,
-		cssClass,
-		cssGutterWidthName,
-		cssBorderWidthName,
-		cssPaddingWidthName
-	} = {
-		baseImagePaths: null,
-		imageOutputConfigs: [
+		imageOutputConfigs = [
 			{ width: 300, quality: 80, destPath: path.resolve('./rw-default-output/rw300') },
 			{ width: 600, quality: 80, destPath: path.resolve('./rw-default-output/rw600') }
 		],
-		breakpoints: [340, 600, 980],
-		patterns: [ [1,2], [2,3], [3,4,5] ],
-		imageFilesInfo: null,
-		cssClass: 'rw-card',
-		cssGutterWidthName: 'rw-card-gutter-width',
-		cssBorderWidthName: 'rw-card-border-width',
-		cssPaddingWidthName: 'rw-card-padding-width'
+		breakpoints = [340, 600, 980],
+		patterns = [ [1,2], [2,3], [3,4,5] ],
+		imageFilesInfo,
+		cssClass = 'rw-card',
+		cssGutterWidthName = 'rw-card-gutter-width',
+		cssBorderWidthName = 'rw-card-border-width',
+		cssPaddingWidthName = 'rw-card-padding-width'
 	})
 	{
 		this.baseImagePaths = baseImagePaths;
@@ -33,10 +23,12 @@ export default class RudyWall {
 		this.breakpoints = breakpoints;
 		this.patterns = patterns;
 		this.imageFilesInfo = imageFilesInfo;
-		this.cssClass = cssClass,
-		this.cssGutterWidthName = cssGutterWidthName,
-		this.cssBorderWidthName = cssBorderWidthName,
-		this.cssPaddingWidthName = cssPaddingWidthName
+		this.cssClass = cssClass;
+		this.cssGutterWidthName = cssGutterWidthName;
+		this.cssBorderWidthName = cssBorderWidthName;
+		this.cssPaddingWidthName = cssPaddingWidthName;
+		// Calculated
+		this.patternLengths = this.patterns.map( pattern => pattern.reduce((acc, curr) => acc + curr) );
 	}
 
 
@@ -81,7 +73,6 @@ export default class RudyWall {
 							});
 							resolve();
 						})
-
 						.catch(err => { reject(err); });
 				}));
 			}
@@ -97,8 +88,50 @@ export default class RudyWall {
 	 *
 	 * Uses (this.imageFilesInfo, this.patterns)
 	 */
-	getImageWidthsAtPatterns() {
-		console.log('getImageWidthsAtPatterns..');
+	getImageInfoAtPatterns() {
+		return this.imageFilesInfo.map((fileInfo, fileInfoIndex, arr) => {
+			const masonaryItem = {
+				fileInfoIndex: fileInfoIndex,
+				files: fileInfo.sizes.map( size => path.basename( size.path ) )  ,
+				aspect: fileInfo.aspect,
+				rowInfo: []
+			};
+		
+			this.patterns.forEach((pattern, patternIndex) => {
+				const breakpointData = {};
+				const patternPos = fileInfoIndex % this.patternLengths[patternIndex];
+		
+				const sliceInfo = pattern.map(rowLength => {
+					return [...new Array(rowLength)].map((el, i) => {
+						return {index: i, rowLength: rowLength}
+					});
+				}).flat();
+	
+				let sliceLeft = sliceInfo[patternPos].index;
+				let sliceRight = sliceInfo[patternPos].rowLength - sliceLeft;
+	
+				let deficit = 0;
+				while( fileInfoIndex + sliceRight - deficit > arr.length)
+					deficit+=1;
+				
+				const siblings = arr.slice(fileInfoIndex - sliceLeft, fileInfoIndex + sliceRight - deficit);
+				const siblingsAspectSum = siblings.reduce((acc, curr) => {
+					return acc + curr.aspect
+				},0);
+				const nGutters = sliceInfo[patternPos].rowLength - deficit - 1;
+				const nBorders = (sliceInfo[patternPos].rowLength - deficit) * 2;
+
+				breakpointData.positionInRow = sliceInfo[patternPos].index;
+				breakpointData.rowLength = sliceInfo[patternPos].rowLength;
+				breakpointData.fractionOfRow = `${fileInfo.aspect}/${siblingsAspectSum}`;
+				breakpointData.nGutters = nGutters;
+				breakpointData.nBorders = nBorders;
+				breakpointData.rowDeficit = deficit;
+				masonaryItem.rowInfo.push(breakpointData);
+			});
+		
+			return masonaryItem;
+		});
 	}
 
 

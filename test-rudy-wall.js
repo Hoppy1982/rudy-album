@@ -17,7 +17,8 @@ const baseImagesJSON = fs.readFileSync(baseImagesJSONPath);
 const baseImagePaths = JSON.parse(baseImagesJSON).images.map(image => image.url);
 const options = {
 	baseImagePaths: baseImagePaths,
-	imageOutputConfigs: imageOutputConfigs
+	imageOutputConfigs: imageOutputConfigs,
+
 }
 
 /* Init */
@@ -36,8 +37,14 @@ const rudyWall1 = new rudyWall(options);
 		//console.log(JSON.stringify(imageInfo, null, 2));
 	});
 
-	rudyWall1.getImageWidthsAtPatterns();
-	rudyWall1.getCss();
+	const imagePatternsInfos = rudyWall1.getImageInfoAtPatterns();
+
+	imagePatternsInfos.forEach(imagePatternsInfo => {
+		console.log(imagePatternsInfo)
+	})
+
+
+	//rudyWall1.getCss();
 })();
 
 
