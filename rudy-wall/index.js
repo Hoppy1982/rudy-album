@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import sharp from 'sharp';
 
+
 export default class RudyWall {
 	constructor({
 		baseImagePaths,
@@ -11,7 +12,6 @@ export default class RudyWall {
 		],
 		breakpoints = [340, 600, 980],
 		patterns = [ [1,2], [2,3], [3,4,5] ],
-		imageFilesInfo,
 		cssClass = 'rw-card',
 		cssGutterWidthName = 'rw-card-gutter-width',
 		cssBorderWidthName = 'rw-card-border-width',
@@ -22,7 +22,6 @@ export default class RudyWall {
 		this.imageOutputConfigs = imageOutputConfigs;
 		this.breakpoints = breakpoints;
 		this.patterns = patterns;
-		this.imageFilesInfo = imageFilesInfo;
 		this.cssClass = cssClass;
 		this.cssGutterWidthName = cssGutterWidthName;
 		this.cssBorderWidthName = cssBorderWidthName;
@@ -86,11 +85,11 @@ export default class RudyWall {
 
 	/*
 	 *
-	 * Uses (this.imageFilesInfo, this.patterns)
+	 * 
 	 */
-	getImageInfoAtPatterns() {
-		return this.imageFilesInfo.map((fileInfo, fileInfoIndex, arr) => {
-			const masonaryItem = {
+	getImageInfoAtPatterns(imageFilesInfo) {
+		return imageFilesInfo.map((fileInfo, fileInfoIndex, arr) => {
+			const rudyWallItem = {
 				fileInfoIndex: fileInfoIndex,
 				files: fileInfo.sizes.map( size => path.basename( size.path ) )  ,
 				aspect: fileInfo.aspect,
@@ -107,30 +106,27 @@ export default class RudyWall {
 					});
 				}).flat();
 	
-				let sliceLeft = sliceInfo[patternPos].index;
-				let sliceRight = sliceInfo[patternPos].rowLength - sliceLeft;
+				const sliceLeft = sliceInfo[patternPos].index;
+				const sliceRight = sliceInfo[patternPos].rowLength - sliceLeft;
 	
 				let deficit = 0;
 				while( fileInfoIndex + sliceRight - deficit > arr.length)
 					deficit+=1;
 				
 				const siblings = arr.slice(fileInfoIndex - sliceLeft, fileInfoIndex + sliceRight - deficit);
-				const siblingsAspectSum = siblings.reduce((acc, curr) => {
-					return acc + curr.aspect
-				},0);
-				const nGutters = sliceInfo[patternPos].rowLength - deficit - 1;
-				const nBorders = (sliceInfo[patternPos].rowLength - deficit) * 2;
+				const siblingsAspectSum = siblings.reduce((acc, curr) => { return acc + curr.aspect }, 0);
 
 				breakpointData.positionInRow = sliceInfo[patternPos].index;
 				breakpointData.rowLength = sliceInfo[patternPos].rowLength;
-				breakpointData.fractionOfRow = `${fileInfo.aspect}/${siblingsAspectSum}`;
-				breakpointData.nGutters = nGutters;
-				breakpointData.nBorders = nBorders;
 				breakpointData.rowDeficit = deficit;
-				masonaryItem.rowInfo.push(breakpointData);
+				breakpointData.fractionOfRow = `${fileInfo.aspect}/${siblingsAspectSum}`;
+				breakpointData.nGutters = sliceInfo[patternPos].rowLength - deficit - 1;
+				breakpointData.nBorders = (sliceInfo[patternPos].rowLength - deficit) * 2;
+
+				rudyWallItem.rowInfo.push(breakpointData);
 			});
 		
-			return masonaryItem;
+			return rudyWallItem;
 		});
 	}
 

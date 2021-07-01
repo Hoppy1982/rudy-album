@@ -2,6 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import rudyWall from "./rudy-wall/index.js";
 
+
 /* Config */
 const baseImagesJSONPath = './src/data/gallery-images.json';
 const imageOutputConfigs = [
@@ -12,6 +13,7 @@ const imageOutputConfigs = [
 ]
 const imageFilesInfoPath = path.resolve('./dist2/data/imageFilesInfo.json');
 
+
 /* Vars */
 const baseImagesJSON = fs.readFileSync(baseImagesJSONPath);
 const baseImagePaths = JSON.parse(baseImagesJSON).images.map(image => image.url);
@@ -20,24 +22,13 @@ const options = {
 	imageOutputConfigs: imageOutputConfigs,
 
 }
-
-/* Init */
 const rudyWall1 = new rudyWall(options);
 
-// Example
-// const imageFilesInfo = rudyWall1.generateImages(baseImagePaths, imageOutputConfig);
-// const imageWidthsAtPatterns = rudyWall1.imageWidthsAtPatterns( imageFilesInfo, patterns )
-// const { cssCustomProps, mediaQueries } = rudyWall1.generateCss( breakpoints, cssStuff)
 
 /* Run */
 (async () => {
-	rudyWall1.imageFilesInfo = await getImageFilesInfo(rudyWall1, imageFilesInfoPath);
-
-	rudyWall1.imageFilesInfo.forEach(imageInfo => {
-		//console.log(JSON.stringify(imageInfo, null, 2));
-	});
-
-	const imagePatternsInfos = rudyWall1.getImageInfoAtPatterns();
+	const imageFilesInfo = await getImageFilesInfo(rudyWall1, imageFilesInfoPath);
+	const imagePatternsInfos = rudyWall1.getImageInfoAtPatterns(imageFilesInfo);
 
 	imagePatternsInfos.forEach(imagePatternsInfo => {
 		console.log(imagePatternsInfo)
@@ -49,7 +40,7 @@ const rudyWall1 = new rudyWall(options);
 
 
 
-/*
+/* TODO - move this to method on class
  * Checks existance of json file to determine whether to generate images or
  * load image file info from json file.
  * Creates the json file after generating the images.
