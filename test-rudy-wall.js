@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { exit } from 'process';
 import rudyWall from "./rudy-wall/index.js";
 
 
@@ -20,46 +21,22 @@ const baseImagePaths = JSON.parse(baseImagesJSON).images.map(image => image.url)
 const options = {
 	baseImagePaths: baseImagePaths,
 	imageOutputConfigs: imageOutputConfigs,
-
-}
+	imageFilesInfoPath: imageFilesInfoPath
+};
 const rudyWall1 = new rudyWall(options);
 
 
 /* Run */
 (async () => {
-	const imageFilesInfo = await getImageFilesInfo(rudyWall1, imageFilesInfoPath);
+	const imageFilesInfo = await rudyWall1.getImageFilesInfo();
 	const imagePatternsInfos = rudyWall1.getImageInfoAtPatterns(imageFilesInfo);
 
 	imagePatternsInfos.forEach(imagePatternsInfo => {
-		console.log(imagePatternsInfo)
+		console.log(imagePatternsInfo);
 	})
 
-
-	//rudyWall1.getCss();
+	//rudyWreturnall1.getCss();
+	console.log('Complete');
 })();
 
 
-
-/* TODO - move this to method on class
- * Checks existance of json file to determine whether to generate images or
- * load image file info from json file.
- * Creates the json file after generating the images.
- * - Leave json file for quicker build (if images unchanged).
- * - Delete json file to re-build images (if images or cfgs changed).
- */
-async function getImageFilesInfo(rudyWall, imageFilesInfoPath) {
-	let imagesInfo = null;
-
-	if ( fs.existsSync(imageFilesInfoPath) ) {
-		let imagesInfoJSON = fs.readFileSync(imageFilesInfoPath);
-		imagesInfo = JSON.parse(imagesInfoJSON);
-	}
-	else {
-		imagesInfo = await rudyWall.generateImages();
-		if ( !fs.existsSync( path.dirname(imageFilesInfoPath)) )
-			fs.mkdirSync( path.dirname(imageFilesInfoPath), { recursive: true } );
-		fs.writeFileSync( imageFilesInfoPath, JSON.stringify(imagesInfo, null, 2) );
-	}
-
-	return imagesInfo;
-}

@@ -1,5 +1,7 @@
 import fs from 'fs';
 import path from 'path';
+import { exit } from 'process';
+import readline from 'readline';
 import sharp from 'sharp';
 
 
@@ -10,6 +12,7 @@ export default class RudyWall {
 			{ width: 300, quality: 80, destPath: path.resolve('./rw-default-output/rw300') },
 			{ width: 600, quality: 80, destPath: path.resolve('./rw-default-output/rw600') }
 		],
+		imageFilesInfoPath,
 		breakpoints = [340, 600, 980],
 		patterns = [ [1,2], [2,3], [3,4,5] ],
 		cssClass = 'rw-card',
@@ -20,6 +23,7 @@ export default class RudyWall {
 	{
 		this.baseImagePaths = baseImagePaths;
 		this.imageOutputConfigs = imageOutputConfigs;
+		this.imageFilesInfoPath = imageFilesInfoPath;
 		this.breakpoints = breakpoints;
 		this.patterns = patterns;
 		this.cssClass = cssClass;
@@ -28,6 +32,29 @@ export default class RudyWall {
 		this.cssPaddingWidthName = cssPaddingWidthName;
 		// Calculated
 		this.patternLengths = this.patterns.map( pattern => pattern.reduce((acc, curr) => acc + curr) );
+	}
+
+
+	/*
+	 * 
+	 */
+	async getImageFilesInfo() {
+		let imagesInfo = null;
+		let JSONFileExists = fs.existsSync(this.imageFilesInfoPath);
+
+		if (JSONFileExists) {
+			let imagesInfoJSON = fs.readFileSync(this.imageFilesInfoPath);
+			imagesInfo = JSON.parse(imagesInfoJSON);
+		}
+		else {
+			console.log(`Missing JSON file, no image data. Creating images & JSON`);
+			imagesInfo = await this.generateImages();
+			if ( !fs.existsSync( path.dirname(this.imageFilesInfoPath)) )
+				fs.mkdirSync( path.dirname(this.imageFilesInfoPath), { recursive: true } );
+			fs.writeFileSync( this.imageFilesInfoPath, JSON.stringify(imagesInfo, null, 2) );
+		}
+
+		return imagesInfo;
 	}
 
 
