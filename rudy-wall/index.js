@@ -39,6 +39,7 @@ export default class RudyWall {
 	 * 
 	 */
 	async getImageFilesInfo() {
+		// TODO - add prompt to create files if no json instead of just doing it?
 		let imagesInfo = null;
 		let JSONFileExists = fs.existsSync(this.imageFilesInfoPath);
 
