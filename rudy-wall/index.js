@@ -113,7 +113,6 @@ export default class RudyWall {
 
 	/*
 	 *
-	 * 
 	 */
 	getImageInfoAtPatterns(imageFilesInfo) {
 		return imageFilesInfo.map((fileInfo, fileInfoIndex, arr) => {
@@ -186,5 +185,26 @@ export default class RudyWall {
 
 		fs.appendFileSync(this.cssOutputPath, `}`);
 		fs.appendFileSync(this.cssOutputPath, `\n\n`);
+	}
+
+
+	/*
+	 * Generates media queries and writes to file.
+	.*/
+	writeMediaQueriesToFile(imagePatternsInfos) {
+		this.breakpoints.forEach((breakpoint, i) => {
+			fs.appendFileSync(this.cssOutputPath, `@media screen and (min-width: ${breakpoint}px) {\n`);
+
+			imagePatternsInfos.forEach((imagePatternsInfo, ii) => {
+				const customPropName = `${this.cssClass}${ii+1}-bp${this.breakpoints[i]}-width`;
+				fs.appendFileSync(this.cssOutputPath,
+					`\t.${this.cssClass}:nth-of-type(${ii+1}) {` + 
+					` width: var(--${customPropName}); ` +
+					`}\n`
+				);
+			});
+
+			fs.appendFileSync(this.cssOutputPath, `}\n`);
+		});
 	}
 }

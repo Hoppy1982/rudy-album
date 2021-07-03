@@ -34,12 +34,12 @@ const rudyWall1 = new rudyWall(options);
 	const imageFilesInfo = await rudyWall1.getImageFilesInfo();
 	const imagePatternsInfos = rudyWall1.getImageInfoAtPatterns(imageFilesInfo);
 	rudyWall1.writeCssCustomPropertiesToFile(imagePatternsInfos);
+	rudyWall1.writeMediaQueriesToFile(imagePatternsInfos);
 
-	imagePatternsInfos.forEach(imagePatternsInfo => {
-		console.log(imagePatternsInfo);
-	})
+	// imagePatternsInfos.forEach(imagePatternsInfo => {
+	// 	console.log(imagePatternsInfo);
+	// })
 
-	//rudyWreturnall1.getCss();
 	console.log('Complete');
 })();
 
