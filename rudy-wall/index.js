@@ -1,7 +1,5 @@
 import fs from 'fs';
 import path from 'path';
-import { exit } from 'process';
-import readline from 'readline';
 import sharp from 'sharp';
 
 
@@ -13,6 +11,7 @@ export default class RudyWall {
 			{ width: 600, quality: 80, destPath: path.resolve('./rw-default-output/rw600') }
 		],
 		imageFilesInfoPath,
+		cssOutputPath = './rw-default-output/css/built-gallery.css',
 		breakpoints = [340, 600, 980],
 		patterns = [ [1,2], [2,3], [3,4,5] ],
 		cssClass = 'rw-card',
@@ -24,6 +23,7 @@ export default class RudyWall {
 		this.baseImagePaths = baseImagePaths;
 		this.imageOutputConfigs = imageOutputConfigs;
 		this.imageFilesInfoPath = imageFilesInfoPath;
+		this.cssOutputPath = cssOutputPath;
 		this.breakpoints = breakpoints;
 		this.patterns = patterns;
 		this.cssClass = cssClass;
@@ -48,7 +48,7 @@ export default class RudyWall {
 			imagesInfo = JSON.parse(imagesInfoJSON);
 		}
 		else {
-			console.log(`Missing JSON file, no image data. Creating images & JSON`);
+			console.log(`Missing JSON file, no image data. Creating images & JSON..`);
 			imagesInfo = await this.generateImages();
 			if ( !fs.existsSync( path.dirname(this.imageFilesInfoPath)) )
 				fs.mkdirSync( path.dirname(this.imageFilesInfoPath), { recursive: true } );
@@ -160,9 +160,31 @@ export default class RudyWall {
 
 
 	/*
-	 * 
-	 */
-	getCss() {
-		console.log('getCss..');
+	* Generates and writes css custom properties to file for each item at each pattern
+	*/
+	writeCssCustomPropertiesToFile(imagePatternsInfos) {
+		const cssDirName = path.dirname( this.cssOutputPath );
+		if (!fs.existsSync(cssDirName))
+			fs.mkdirSync(cssDirName, { recursive: true });
+
+		fs.appendFileSync(this.cssOutputPath, `:root {\n`);
+
+		for (let patternIndex=0; patternIndex<this.patterns.length; patternIndex++) {
+			imagePatternsInfos.forEach((imagePatternsInfo, imagePatternsInfoIndex)  => {
+				const fractionOfRow = `${imagePatternsInfo.rowInfo[patternIndex].fractionOfRow}`;
+				const gutterSpace = `${imagePatternsInfo.rowInfo[patternIndex].nGutters} * var(--${this.cssGutterWidthName})`;
+				const borderSpace = `${imagePatternsInfo.rowInfo[patternIndex].nBorders} * var(--${this.cssBorderWidthName})`;
+				const paddingSpace = `${imagePatternsInfo.rowInfo[patternIndex].nBorders} * var(--${this.cssPaddingWidthName})`;
+				const totalSpace = `( (${gutterSpace}) + (${borderSpace}) + (${paddingSpace}) )`;
+				const customPropName = `${this.cssClass}${imagePatternsInfoIndex+1}-bp${this.breakpoints[patternIndex]}-width`;
+				const customPropVal = `calc( (100% - ${totalSpace}*1px) * ${fractionOfRow} )`;
+
+				fs.appendFileSync(this.cssOutputPath, `\t--${customPropName}: ${customPropVal};\n`);
+			});
+			fs.appendFileSync(this.cssOutputPath, `\n`);
+		}
+
+		fs.appendFileSync(this.cssOutputPath, `}`);
+		fs.appendFileSync(this.cssOutputPath, `\n\n`);
 	}
 }
